@@ -1,5 +1,0 @@
-Start: 2014-12-05 15:04:12 -0500
-[+] Fetching cert at https://www.us-cert.gov/ncas/alerts.xml
-Start: 2014-12-05 15:04:13 -0500
-[+] Fetching nvd at https://nvd.nist.gov/download/nvd-rss.xml
-[+] Fetch complete: 2014-12-05 15:04:36 -0500
