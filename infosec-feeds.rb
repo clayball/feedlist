@@ -14,15 +14,14 @@
 #   management, security measurement, and compliance. NVD includes databases of security checklists,
 #   security related software flaws, misconfigurations, product names, and impact metrics.
 
-require 'curb'     # Ruby bindings for libcurl
+require 'curb'    # Ruby bindings for libcurl
 #require 'thread'
 
 # XML Feed Symbols
 xmlfeeds = {
 	cert: 'https://www.us-cert.gov/ncas/alerts.xml',
-	nvd: 'https://nvd.nist.gov/download/nvd-rss.xml' #,
-	#nvdcvemod: 'https://nvd.nist.gov/feeds/xml/cve/nvdcve-2.0-Modified.xml',
-	#nvdcverec: 'http://static.nvd.nist.gov/feeds/xml/cve/nvdcve-2.0-Recent.xml'
+	nvd: 'https://nvd.nist.gov/download/nvd-rss.xml'
+	# add more feeds here
 }
 
 fout = File.new("feeds.log", "w")

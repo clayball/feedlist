@@ -1,9 +1,5 @@
-Start: 2014-12-04 23:40:20 -0500
+Start: 2014-12-05 15:04:12 -0500
 [+] Fetching cert at https://www.us-cert.gov/ncas/alerts.xml
-Start: 2014-12-04 23:40:20 -0500
-[+] Fetching nvd at https://nvd.nist.gov/download/nvdcve-2014trans.xml
-Start: 2014-12-04 23:40:21 -0500
-[+] Fetching nvdcvemod at https://nvd.nist.gov/feeds/xml/cve/nvdcve-2.0-Modified.xml
-Start: 2014-12-04 23:40:22 -0500
-[+] Fetching nvdcverec at http://static.nvd.nist.gov/feeds/xml/cve/nvdcve-2.0-Recent.xml
-[+] Fetch complete: 2014-12-04 23:40:23 -0500
+Start: 2014-12-05 15:04:13 -0500
+[+] Fetching nvd at https://nvd.nist.gov/download/nvd-rss.xml
+[+] Fetch complete: 2014-12-05 15:04:36 -0500
