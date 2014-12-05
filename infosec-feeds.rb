@@ -15,7 +15,8 @@
 #   security related software flaws, misconfigurations, product names, and impact metrics.
 
 # TODO: migrate to nokogiri instead.
-require 'curb'    # Ruby bindings for libcurl
+require 'nokogiri'
+require 'open-uri'
 
 # XML Feed Symbols
 xmlfeeds = {
@@ -26,12 +27,19 @@ xmlfeeds = {
 
 fout = File.new("feeds.log", "w")
 
+# Loop through xmlfeeds and fetch each RSS XML file.. we can play with these file locally later.
 xmlfeeds.each_pair do |key, value|
-	fout.print "Start: #{Time.now}\n"
+	#fout.print "Start: #{Time.now}\n"
 	xmlout = File.new("xml/#{key}.xml", "w")
-	fout.print "[+] Fetching #{key} at #{value}\n"
-	http = Curl.get("#{value}")
-	xmlout.print http.body_str
+	print "[+] Fetching #{key} at #{value}\n"
+	doc = Nokogiri::HTML(open("#{value}"))
+	xmlout.print doc
+	print "[+] #{key} file saved to xml/#{key}.xml\n"
 end
 
 fout.print "[+] Fetch complete: #{Time.now}\n"
+
+# Use nokogiri to open and parse the XML files we downloaded.
+#f = File.open(".xml")
+#doc = Nokogiri::XML(f)
+#f.close
