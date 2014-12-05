@@ -14,8 +14,8 @@
 #   management, security measurement, and compliance. NVD includes databases of security checklists,
 #   security related software flaws, misconfigurations, product names, and impact metrics.
 
+# TODO: migrate to nokogiri instead.
 require 'curb'    # Ruby bindings for libcurl
-#require 'thread'
 
 # XML Feed Symbols
 xmlfeeds = {
