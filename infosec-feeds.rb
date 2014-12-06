@@ -34,12 +34,7 @@ require 'nokogiri'
 require 'open-uri'
 
 ####################
-# NOTES            #
-####################
-# 
-####################
-
-# XML feed hashes based 
+# XML feed hashes based on type, e.g., vulnerability alerts, infosec news, etc
 alertfeeds = {
 	alert_cert: 'https://www.us-cert.gov/ncas/alerts.xml',
 	alert_nvd: 'https://nvd.nist.gov/download/nvd-rss.xml',
@@ -84,6 +79,7 @@ end
 ####################
 # Main             #
 ####################
+
 get_feeds_result = get_feeds(alertfeeds, 'alert')
 print "[info] alert feeds result: #{get_feeds_result}\n"
 
