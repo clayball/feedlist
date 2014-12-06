@@ -37,7 +37,8 @@ require 'open-uri'
 feed_categories = %w[alert vendor news blog]
 Dir.mkdir('xml') unless Dir.exists?('xml')
 feed_categories.each do |f|
-    Dir.mkdir('xml/'+f) unless Dir.exists?('xml'+f)
+	puts "[info] checking for directory: xml/#{f}"
+  Dir.mkdir('xml/'+f) unless Dir.exists?('xml/'+f)
 end
 
 ####################
@@ -66,20 +67,25 @@ blogfeeds = {
 ####################
 # Functions        #
 ####################
-def get_feeds(feeds,type)
+def get_feeds(feeds, type)
 	print "[+] Fetching #{type} feeds.. \n"
 	# Loop through xmlfeeds and fetch each RSS XML file.. we can play with these file locally later.
 	feeds.each_pair do |key, value|
-		#fout.print "Start: #{Time.now}\n"
 		xmlout = File.new("xml/#{type}/#{key}.xml", "w")
 		print "[+] Fetching #{key} at #{value}\n"
-		doc = Nokogiri::XML(open("#{value}"))
-		xmlout.print doc
-		print "[+] ..#{key} file saved to xml/#{type}/#{key}.xml\n"
+		begin
+			rssdoc = Nokogiri::XML(open("#{value}"))
+			xmlout.print rssdoc
+			print "[+] ..#{key} file saved to xml/#{type}/#{key}.xml\n"
+			return "success"
+		rescue Exception
+			STDERR.puts "[-] Failed to download #{value}: #{$!}"
+			File.delete(xmlout)
+			raise
+		end
 	end
-	print "[+] Fetch complete\n"
-	return "success"
 end
+
 # End Functions
 ####################
 
