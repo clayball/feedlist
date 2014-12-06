@@ -6,9 +6,7 @@ class Feed
   attr_accessor :name, :type, :url, :file
 
   def initialize(name, type, url)
-    @name = name
-    @type = type
-    @url = url
+    @name, @type, @url = name, type, url
     Dir.mkdir('xml') unless Dir.exist?('xml')
     Dir.mkdir('xml/' + @type) unless Dir.exist?('xml/' + @type)
     @file = "#{@type}_#{@name}.xml"
