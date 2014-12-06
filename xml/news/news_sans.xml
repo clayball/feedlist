@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="/css/rss.css" type="text/css"?>
+<rss version="2.0">
+<channel>
+  <title>SANS ISC SecNewsFeed</title>
+  <link>http://isc.sans.edu</link>
+  <description><![CDATA[]]></description>
+  <language>   en-us</language>
+<copyright>(C) SANS Institute 2014</copyright>
+             <generator>isc rss feed maker</generator>
+             <ttl>30</ttl>
+             <webMaster>handlers@sans.org (ISC Handlers)</webMaster>
+             <image>
+               <title>SANS ISC SecNewsFeed</title>
+               <url>http://isc.sans.edu/images/status.gif</url>
+               <link>http://isc.sans.edu/rssfeed_full.xml</link>
+             </image>
+  <item>
+    <title>Tuning Elapsed Times: More Resource Balancing and Summary (IT Toolbox Blogs)</title>
+    <link>http://it.toolbox.com/blogs/database-administration/tuning-elapsed-times-more-resource-balancing-and-summary-64735</link>
+    <guid>http://it.toolbox.com/blogs/database-administration/tuning-elapsed-times-more-resource-balancing-and-summary-64735</guid>
+  </item>
+  <item>
+    <title>How Group Health Plans can Ensure HIPAA Compliance (IT Toolbox Blogs)</title>
+    <link>http://it.toolbox.com/blogs/data-protection/how-group-health-plans-can-ensure-hipaa-compliance-64345</link>
+    <guid>http://it.toolbox.com/blogs/data-protection/how-group-health-plans-can-ensure-hipaa-compliance-64345</guid>
+  </item>
+  <item>
+    <title>Offline Mobile Programming In Focus (IT Toolbox Blogs)</title>
+    <link>http://it.toolbox.com/blogs/integrate-my-jde/offline-mobile-programming-in-focus-64861</link>
+    <guid>http://it.toolbox.com/blogs/integrate-my-jde/offline-mobile-programming-in-focus-64861</guid>
+  </item>
+  <item>
+    <title>Hackers Threaten Sony Employees (InfoRiskToday)</title>
+    <link>http://www.inforisktoday.com/hackers-threaten-sony-employees-a-7649</link>
+    <guid>http://www.inforisktoday.com/hackers-threaten-sony-employees-a-7649</guid>
+  </item>
+  <item>
+    <title>PDF Javascript in SVG images. Xpost from r/programming (Reddit)</title>
+    <link>http://www.reddit.com/r/netsec/comments/2ofh4s/pdf_javascript_in_svg_images_xpost_from/</link>
+    <guid>http://www.reddit.com/r/netsec/comments/2ofh4s/pdf_javascript_in_svg_images_xpost_from/</guid>
+  </item>
+  <item>
+    <title>BREAKING NEWS: Subdomain American Express Website has been Hacked By AnonGhost (Reddit)</title>
+    <link>http://www.reddit.com/r/netsec/comments/2ofalg/breaking_news_subdomain_american_express_website/</link>
+    <guid>http://www.reddit.com/r/netsec/comments/2ofalg/breaking_news_subdomain_american_express_website/</guid>
+  </item>
+  <item>
+    <title>Report: Threatening email sent to Sony employees (Yahoo Security)</title>
+    <link>http://news.yahoo.com/report-threatening-email-sent-sony-employees-012607999.html</link>
+    <guid>http://news.yahoo.com/report-threatening-email-sent-sony-employees-012607999.html</guid>
+  </item>
+  <item>
+    <title>Hackers Threaten Sony Staff in New Email (SecurityWeek)</title>
+    <link>http://feedproxy.google.com/~r/Securityweek/~3/7kb2lxOhXOs/hackers-threaten-sony-staff-new-email</link>
+    <guid>http://feedproxy.google.com/~r/Securityweek/~3/7kb2lxOhXOs/hackers-threaten-sony-staff-new-email</guid>
+  </item>
+  <item>
+    <title>Hackers send e-mail to Sony employees threatening their families (ArsTechnica)</title>
+    <link>http://feeds.arstechnica.com/~r/arstechnica/security/~3/gqJiWlktx_U/</link>
+    <guid>http://feeds.arstechnica.com/~r/arstechnica/security/~3/gqJiWlktx_U/</guid>
+  </item>
+  <item>
+    <title>Sony employees receive email threat claiming to be from hackers (Yahoo Security)</title>
+    <link>http://news.yahoo.com/sony-employees-receive-email-threat-claiming-hackers-012233283--finance.html</link>
+    <guid>http://news.yahoo.com/sony-employees-receive-email-threat-claiming-hackers-012233283--finance.html</guid>
+  </item>
+  <item>
+    <title>NETCONF Call Home and RESTCONF Call Home - Kent Watsen (Internet Drafts)</title>
+    <link>http://tools.ietf.org/html/draft-ietf-netconf-call-home-02</link>
+    <guid>http://tools.ietf.org/html/draft-ietf-netconf-call-home-02</guid>
+  </item>
+  <item>
+    <title>Fake browser warning your uncle might fall for delivers malicious trojan (ArsTechnica)</title>
+    <link>http://feeds.arstechnica.com/~r/arstechnica/security/~3/PxCuJOEYxbQ/</link>
+    <guid>http://feeds.arstechnica.com/~r/arstechnica/security/~3/PxCuJOEYxbQ/</guid>
+  </item>
+  <item>
+    <title>US: Navy engineer tried to steal schematics (Yahoo Security)</title>
+    <link>http://news.yahoo.com/us-navy-engineer-tried-steal-schematics-223853701.html</link>
+    <guid>http://news.yahoo.com/us-navy-engineer-tried-steal-schematics-223853701.html</guid>
+  </item>
+  <item>
+    <title>Offset2lib: bypassing full ASLR on 64bit Linux (Reddit)</title>
+    <link>http://www.reddit.com/r/netsec/comments/2oepnc/offset2lib_bypassing_full_aslr_on_64bit_linux/</link>
+    <guid>http://www.reddit.com/r/netsec/comments/2oepnc/offset2lib_bypassing_full_aslr_on_64bit_linux/</guid>
+  </item>
+  <item>
+    <title>Experts take inventory of Sony Pictures data leak, potential costs (SC Magazine)</title>
+    <link>http://feedproxy.google.com/~r/SCMagazineNews/~3/TA6dNyn-Rts/</link>
+    <guid>http://feedproxy.google.com/~r/SCMagazineNews/~3/TA6dNyn-Rts/</guid>
+  </item>
+  <item>
+    <title>Feds: Navy engineer tried to steal schematics (Yahoo Security)</title>
+    <link>http://news.yahoo.com/feds-navy-engineer-tried-steal-schematics-222817880.html</link>
+    <guid>http://news.yahoo.com/feds-navy-engineer-tried-steal-schematics-222817880.html</guid>
+  </item>
+  <item>
+    <title>The CMO versus CIO issue (IT Toolbox Blogs)</title>
+    <link>http://it.toolbox.com/blogs/ea-matters/the-cmo-versus-cio-issue-64727</link>
+    <guid>http://it.toolbox.com/blogs/ea-matters/the-cmo-versus-cio-issue-64727</guid>
+  </item>
+  <item>
+    <title>Surveillance Cartoon (Schneier blog)</title>
+    <link>https://www.schneier.com/blog/archives/2014/12/surveillance_ca_8.html</link>
+    <guid>https://www.schneier.com/blog/archives/2014/12/surveillance_ca_8.html</guid>
+  </item>
+  <item>
+    <title>Friday Squid Blogging: Squid Poaching off the Coast of Japan (Schneier blog)</title>
+    <link>https://www.schneier.com/blog/archives/2014/12/friday_squid_bl_453.html</link>
+    <guid>https://www.schneier.com/blog/archives/2014/12/friday_squid_bl_453.html</guid>
+  </item>
+  <item>
+    <title>Moving Beyond 2-Factor Authentication With Context (Dark Reading)</title>
+    <link>http://www.darkreading.com/endpoint/authentication/moving-beyond-2-factor-authentication-with-context/a/d-id/1317911?_mc=RSS_DR_EDT</link>
+    <guid>http://www.darkreading.com/endpoint/authentication/moving-beyond-2-factor-authentication-with-context/a/d-id/1317911?_mc=RSS_DR_EDT</guid>
+  </item>
+  <item>
+    <title>The Importance of Uncovering Business Requirements Prior to ERP Implementation (IT Toolbox Blogs)</title>
+    <link>http://it.toolbox.com/blogs/get-smart-erp/the-importance-of-uncovering-business-requirements-prior-to-erp-implementation-64859</link>
+    <guid>http://it.toolbox.com/blogs/get-smart-erp/the-importance-of-uncovering-business-requirements-prior-to-erp-implementation-64859</guid>
+  </item>
+  <item>
+    <title>Steve Jobs' video testimony transfixes courtroom (Yahoo Security)</title>
+    <link>http://news.yahoo.com/steve-jobs-video-testimony-transfixes-courtroom-213458632--finance.html</link>
+    <guid>http://news.yahoo.com/steve-jobs-video-testimony-transfixes-courtroom-213458632--finance.html</guid>
+  </item>
+  <item>
+    <title>IBM Reveals 'SpoofedMe' Attack Leveraging Social Login Vulnerability  (Dark Reading)</title>
+    <link>http://www.darkreading.com/vulnerabilities---threats/ibm-reveals-spoofedme-attack-leveraging-social-login-vulnerability-/d/d-id/1317934?_mc=RSS_DR_EDT</link>
+    <guid>http://www.darkreading.com/vulnerabilities---threats/ibm-reveals-spoofedme-attack-leveraging-social-login-vulnerability-/d/d-id/1317934?_mc=RSS_DR_EDT</guid>
+  </item>
+  <item>
+    <title>Health billing co., former CEO settle with FTC over data collection (SC Magazine)</title>
+    <link>http://feedproxy.google.com/~r/SCMagazineNews/~3/hWLFS8XX470/</link>
+    <guid>http://feedproxy.google.com/~r/SCMagazineNews/~3/hWLFS8XX470/</guid>
+  </item>
+  <item>
+    <title>Report: NSA operation to identify cell phone network weaknesses, exploit for surveillance (SC Magazine)</title>
+    <link>http://feedproxy.google.com/~r/SCMagazineNews/~3/daaE1lqNrOU/</link>
+    <guid>http://feedproxy.google.com/~r/SCMagazineNews/~3/daaE1lqNrOU/</guid>
+  </item>
+  <item>
+    <title>German courts blocks extradition of top hacker (SC Magazine)</title>
+    <link>http://feedproxy.google.com/~r/SCMagazineNews/~3/RD_VGSGNH6M/</link>
+    <guid>http://feedproxy.google.com/~r/SCMagazineNews/~3/RD_VGSGNH6M/</guid>
+  </item>
+  <item>
+    <title>Study: 58 percent of businesses do not have complete patch management strategy (SC Magazine)</title>
+    <link>http://feedproxy.google.com/~r/SCMagazineNews/~3/Pf0noCLg5I4/</link>
+    <guid>http://feedproxy.google.com/~r/SCMagazineNews/~3/Pf0noCLg5I4/</guid>
+  </item>
+  <item>
+    <title>Probable Defense Secretary Nominee is Proponent of Cybersecurity (December 2, 2014)  (SANS Newsbites)</title>
+    <link>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID307</link>
+    <guid>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID307</guid>
+  </item>
+  <item>
+    <title>Authorities in Kenya Arrest 77 People (December 4, 2014)  (SANS Newsbites)</title>
+    <link>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID306</link>
+    <guid>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID306</guid>
+  </item>
+  <item>
+    <title>Microsoft Plans to Release Seven Security Bulletins Next Tuesday (December 4, 2014)  (SANS Newsbites)</title>
+    <link>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID305</link>
+    <guid>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID305</guid>
+  </item>
+  <item>
+    <title>Google Rethinking CAPTCHA (December 3, 2014)  (SANS Newsbites)</title>
+    <link>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID304</link>
+    <guid>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID304</guid>
+  </item>
+  <item>
+    <title>Malware Pre-Installed on Certain Smartphones (December 4, 2014)  (SANS Newsbites)</title>
+    <link>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID303</link>
+    <guid>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID303</guid>
+  </item>
+  <item>
+    <title>DOJ Establishing Cybersecurity Unit (December 4, 2014)  (SANS Newsbites)</title>
+    <link>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID302</link>
+    <guid>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID302</guid>
+  </item>
+  <item>
+    <title>Defense Industrial Base ISAC to Launch in February 2015 (December 4, 2014)  (SANS Newsbites)</title>
+    <link>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID301</link>
+    <guid>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID301</guid>
+  </item>
+  <item>
+    <title>PayPal Fixes Cross-Site Request Forgery Vulnerability (December 4, 2014)  (SANS Newsbites)</title>
+    <link>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID300</link>
+    <guid>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID300</guid>
+  </item>
+  <item>
+    <title>Sony Attack Code Analysis (December 2  3, 2014)  (SANS Newsbites)</title>
+    <link>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID202</link>
+    <guid>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID202</guid>
+  </item>
+  <item>
+    <title>Sony Pictures Attackers Release Sensitive Data (December 3  4, 2014)  (SANS Newsbites)</title>
+    <link>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID201</link>
+    <guid>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID201</guid>
+  </item>
+  <item>
+    <title>Operation Cleaver (December 2  3, 2014)  (SANS Newsbites)</title>
+    <link>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID200</link>
+    <guid>http://www.sans.org/newsletters/newsbites/newsbites.php?vol=16&amp;issue=96&amp;rss=Y#sID200</guid>
+  </item>
+  <item>
+    <title>Industry Reactions to Devastating Sony Hack (SecurityWeek)</title>
+    <link>http://feedproxy.google.com/~r/Securityweek/~3/76uo7gpnWyY/industry-reactions-devastating-sony-hack</link>
+    <guid>http://feedproxy.google.com/~r/Securityweek/~3/76uo7gpnWyY/industry-reactions-devastating-sony-hack</guid>
+  </item>
+  <item>
+    <title>Vuln: Teeworlds Memory Corruption and Denial of Service Vulnerabilities (SecurityFocus Vulnerabilities)</title>
+    <link>http://www.securityfocus.com/bid/71301</link>
+    <guid>http://www.securityfocus.com/bid/71301</guid>
+  </item>
+  <item>
+    <title>Vuln: WordPress SP Project  Document Manager Plugin 'ajax.php' Multiple SQL Injection Vulnerabilities (SecurityFocus Vulnerabilities)</title>
+    <link>http://www.securityfocus.com/bid/71267</link>
+    <guid>http://www.securityfocus.com/bid/71267</guid>
+  </item>
+  <item>
+    <title>Sony Hackers Dump Personal Data on 47,000 People, Celebs Included (SecurityWeek)</title>
+    <link>http://feedproxy.google.com/~r/Securityweek/~3/bcpxBQBUXuI/sony-hackers-dump-personal-data-47000-people-celebs-included</link>
+    <guid>http://feedproxy.google.com/~r/Securityweek/~3/bcpxBQBUXuI/sony-hackers-dump-personal-data-47000-people-celebs-included</guid>
+  </item>
+  <item>
+    <title>Bill introduced, bans government mandates to build weaknesses into technologies (SC Magazine)</title>
+    <link>http://feedproxy.google.com/~r/SCMagazineNews/~3/IQsL7ZZPqkc/</link>
+    <guid>http://feedproxy.google.com/~r/SCMagazineNews/~3/IQsL7ZZPqkc/</guid>
+  </item>
+  <item>
+    <title>Vuln: Mozilla Firefox/Thunderbird CVE-2014-1595 Multiple Local Information Disclosure Vulnerabilities (SecurityFocus Vulnerabilities)</title>
+    <link>http://www.securityfocus.com/bid/71394</link>
+    <guid>http://www.securityfocus.com/bid/71394</guid>
+  </item>
+  <item>
+    <title>Vuln: Docker CVE-2014-6407 Local Privilege Escalation Vulnerability (SecurityFocus Vulnerabilities)</title>
+    <link>http://www.securityfocus.com/bid/71315</link>
+    <guid>http://www.securityfocus.com/bid/71315</guid>
+  </item>
+  <item>
+    <title>Vuln: ClickDesk Multiple HTML Injection Vulnerabilities (SecurityFocus Vulnerabilities)</title>
+    <link>http://www.securityfocus.com/bid/65971</link>
+    <guid>http://www.securityfocus.com/bid/65971</guid>
+  </item>
+  <item>
+    <title>Vuln: Mozilla Firefox/Thunderbird CVE-2014-1587 Multiple Memory Corruption Vulnerabilities (SecurityFocus Vulnerabilities)</title>
+    <link>http://www.securityfocus.com/bid/71391</link>
+    <guid>http://www.securityfocus.com/bid/71391</guid>
+  </item>
+  <item>
+    <title>Michael Fey, former Intel Security CTO, heads to Blue Coat (SC Magazine)</title>
+    <link>http://feedproxy.google.com/~r/SCMagazineNews/~3/Xn3mRed7PzI/</link>
+    <guid>http://feedproxy.google.com/~r/SCMagazineNews/~3/Xn3mRed7PzI/</guid>
+  </item>
+  <item>
+    <title>Seven bulletins in Patch Tuesday preview, three deemed critical (SC Magazine)</title>
+    <link>http://feedproxy.google.com/~r/SCMagazineNews/~3/kRRQu7nFMzQ/</link>
+    <guid>http://feedproxy.google.com/~r/SCMagazineNews/~3/kRRQu7nFMzQ/</guid>
+  </item>
+  <item>
+    <title>Version of malware that took out Sony Pictures seen in wild in July (ArsTechnica)</title>
+    <link>http://feeds.arstechnica.com/~r/arstechnica/security/~3/SZHfBNgJ924/</link>
+    <guid>http://feeds.arstechnica.com/~r/arstechnica/security/~3/SZHfBNgJ924/</guid>
+  </item>
+  <item>
+    <title>Industry News: Soltra Sharing Platform Unveiled (InfoRiskToday)</title>
+    <link>http://www.inforisktoday.com/industry-news-soltra-sharing-platform-unveiled-a-7646</link>
+    <guid>http://www.inforisktoday.com/industry-news-soltra-sharing-platform-unveiled-a-7646</guid>
+  </item>
+  <item>
+    <title>The Many Trials for Ashton Carter (Yahoo Security)</title>
+    <link>http://news.yahoo.com/many-trials-ashton-carter-170825914.html</link>
+    <guid>http://news.yahoo.com/many-trials-ashton-carter-170825914.html</guid>
+  </item>
+  <item>
+    <title>Upcoming Adobe release to address critical Reader, Acrobat bugs (SC Magazine)</title>
+    <link>http://feedproxy.google.com/~r/SCMagazineNews/~3/v3pAWnOF658/</link>
+    <guid>http://feedproxy.google.com/~r/SCMagazineNews/~3/v3pAWnOF658/</guid>
+  </item>
+  <item>
+    <title>Bugtraq: NASA Orion Mars Program - Bypass, Persistent Issue  Embed Code Execution Vulnerability (Boarding Pass) (SecurityFocus Vulnerabilities)</title>
+    <link>http://www.securityfocus.com/archive/1/534162</link>
+    <guid>http://www.securityfocus.com/archive/1/534162</guid>
+  </item>
+  <item>
+    <title>Vuln: ZTE 831CII Multiple Security Vulnerabilities (SecurityFocus Vulnerabilities)</title>
+    <link>http://www.securityfocus.com/bid/70984</link>
+    <guid>http://www.securityfocus.com/bid/70984</guid>
+  </item>
+  <item>
+    <title>Vuln: MantisBT 'core/currentuserapi.php' PHP Object Injection Vulnerability (SecurityFocus Vulnerabilities)</title>
+    <link>http://www.securityfocus.com/bid/71361</link>
+    <guid>http://www.securityfocus.com/bid/71361</guid>
+  </item>
+  <item>
+    <title>Vuln: MantisBT 'admin/upgradeunattended.php' Security Bypass Vulnerability (SecurityFocus Vulnerabilities)</title>
+    <link>http://www.securityfocus.com/bid/71359</link>
+    <guid>http://www.securityfocus.com/bid/71359</guid>
+  </item>
+  <item>
+    <title>What Is A Coder's Worst Nightmare? (Forbes)</title>
+    <link>http://www.forbes.com/sites/quora/2014/12/05/what-is-a-coders-worst-nightmare/?ss=Security</link>
+    <guid>http://www.forbes.com/sites/quora/2014/12/05/what-is-a-coders-worst-nightmare/?ss=Security</guid>
+  </item>
+  <item>
+    <title>Where next for IT? (IT Toolbox Blogs)</title>
+    <link>http://it.toolbox.com/blogs/datasecurity/where-next-for-it-64858</link>
+    <guid>http://it.toolbox.com/blogs/datasecurity/where-next-for-it-64858</guid>
+  </item>
+  <item>
+    <title>Retailer Bebe Confirms Card Breach (InfoRiskToday)</title>
+    <link>http://www.inforisktoday.com/retailer-bebe-confirms-card-breach-a-7645</link>
+    <guid>http://www.inforisktoday.com/retailer-bebe-confirms-card-breach-a-7645</guid>
+  </item>
+  <item>
+    <title>Bebe confirms breach, says data exposed (SC Magazine)</title>
+    <link>http://feedproxy.google.com/~r/SCMagazineNews/~3/AKAKTGju0H8/</link>
+    <guid>http://feedproxy.google.com/~r/SCMagazineNews/~3/AKAKTGju0H8/</guid>
+  </item>
+  <item>
+    <title>Moving Beyond 2-Factor Authentication With 'Context' (Dark Reading)</title>
+    <link>http://www.darkreading.com/endpoint/authentication/moving-beyond-2-factor-authentication-with-context/a/d-id/1317911?_mc=RSS_DR_EDT</link>
+    <guid>http://www.darkreading.com/endpoint/authentication/moving-beyond-2-factor-authentication-with-context/a/d-id/1317911?_mc=RSS_DR_EDT</guid>
+  </item>
+  <item>
+    <title>Dozens of Chinese held in Kenyan cyber crime investigation (Yahoo Security)</title>
+    <link>http://news.yahoo.com/dozens-chinese-held-kenyan-cyber-crime-investigation-162318830.html</link>
+    <guid>http://news.yahoo.com/dozens-chinese-held-kenyan-cyber-crime-investigation-162318830.html</guid>
+  </item>
+  <item>
+    <title>10 Crazy Expensive Holiday Presents  (IT Toolbox Blogs)</title>
+    <link>http://it.toolbox.com/blogs/toolbox-for-it-team/10-crazy-expensive-holiday-presents--64839</link>
+    <guid>http://it.toolbox.com/blogs/toolbox-for-it-team/10-crazy-expensive-holiday-presents--64839</guid>
+  </item>
+  <item>
+    <title>Big Picture Benefit #2 - Every Business can use VoIP (IT Toolbox Blogs)</title>
+    <link>http://it.toolbox.com/blogs/voip-news/big-picture-benefit-2-every-business-can-use-voip-64830</link>
+    <guid>http://it.toolbox.com/blogs/voip-news/big-picture-benefit-2-every-business-can-use-voip-64830</guid>
+  </item>
+  <item>
+    <title>Bebe discloses data breach (Yahoo Security)</title>
+    <link>http://news.yahoo.com/bebe-discloses-data-breach-144727978--finance.html</link>
+    <guid>http://news.yahoo.com/bebe-discloses-data-breach-144727978--finance.html</guid>
+  </item>
+  <item>
+    <title>Sony Hack: Ties to Past 'Wiper' Attacks? (InfoRiskToday)</title>
+    <link>http://www.inforisktoday.com/sony-hack-ties-to-past-wiper-attacks-a-7644</link>
+    <guid>http://www.inforisktoday.com/sony-hack-ties-to-past-wiper-attacks-a-7644</guid>
+  </item>
+  <item>
+    <title>Nothing illegal to see here: Tribunal says TEMPORA spying is OK (The Register)</title>
+    <link>http://go.theregister.com/feed/www.theregister.co.uk/2014/12/05/tempora_spying_is_just_fine_spooks_so_continue_caressing_cables/</link>
+    <guid>http://go.theregister.com/feed/www.theregister.co.uk/2014/12/05/tempora_spying_is_just_fine_spooks_so_continue_caressing_cables/</guid>
+  </item>
+  <item>
+    <title>Too Fast To Remediate: Why The IT Mindset Is Risky When Applied To Security (Forbes)</title>
+    <link>http://www.forbes.com/sites/frontline/2014/12/05/too-fast-to-remediate-why-the-it-mindset-is-risky-when-applied-to-security/?ss=Security</link>
+    <guid>http://www.forbes.com/sites/frontline/2014/12/05/too-fast-to-remediate-why-the-it-mindset-is-risky-when-applied-to-security/?ss=Security</guid>
+  </item>
+  <item>
+    <title>Exploit Payload Possibly Made It Onto NASA's Orion Spacecraft (SecurityWeek)</title>
+    <link>http://feedproxy.google.com/~r/Securityweek/~3/gj64ymawHh8/exploit-payload-possibly-made-it-nasas-orion-spacecraft</link>
+    <guid>http://feedproxy.google.com/~r/Securityweek/~3/gj64ymawHh8/exploit-payload-possibly-made-it-nasas-orion-spacecraft</guid>
+  </item>
+  <item>
+    <title>NH-ISAC Offers Cyber-Intelligence Tool (InfoRiskToday)</title>
+    <link>http://www.inforisktoday.com/nh-isac-offers-cyber-intelligence-tool-a-7642</link>
+    <guid>http://www.inforisktoday.com/nh-isac-offers-cyber-intelligence-tool-a-7642</guid>
+  </item>
+  <item>
+    <title>Vuln: UnRTF RTF File Handling Out of Bounds Memory Corruption Vulnerability (SecurityFocus Vulnerabilities)</title>
+    <link>http://www.securityfocus.com/bid/71430</link>
+    <guid>http://www.securityfocus.com/bid/71430</guid>
+  </item>
+  <item>
+    <title>Vuln: MantisBT 'helperapi.php' Cross Site Scripting Vulnerability (SecurityFocus Vulnerabilities)</title>
+    <link>http://www.securityfocus.com/bid/71368</link>
+    <guid>http://www.securityfocus.com/bid/71368</guid>
+  </item>
+  <item>
+    <title>Kaspersky: That 2 years we took to warn you about Regin ? We had GOOD REASON (The Register)</title>
+    <link>http://go.theregister.com/feed/www.theregister.co.uk/2014/12/05/regin_kaspersky/</link>
+    <guid>http://go.theregister.com/feed/www.theregister.co.uk/2014/12/05/regin_kaspersky/</guid>
+  </item>
+  <item>
+    <title>Cheap Android smartphones pre-loaded with malware (ZDNet)</title>
+    <link>http://www.zdnet.com/article/cheap-android-smartphones-pre-loaded-with-malware/#ftag=RSSbaffb68</link>
+    <guid>http://www.zdnet.com/article/cheap-android-smartphones-pre-loaded-with-malware/#ftag=RSSbaffb68</guid>
+  </item>
+  <item>
+    <title>Apples has updated Safari (IT Toolbox Blogs)</title>
+    <link>http://it.toolbox.com/blogs/personal-pc-assistant/apples-has-updated-safari-64857</link>
+    <guid>http://it.toolbox.com/blogs/personal-pc-assistant/apples-has-updated-safari-64857</guid>
+  </item>
+  <item>
+    <title>VMware Fixes Several Vulnerabilities in vSphere Platform (SecurityWeek)</title>
+    <link>http://feedproxy.google.com/~r/Securityweek/~3/1tWmeeeh8As/vmware-fixes-several-vulnerabilities-vsphere-platform</link>
+    <guid>http://feedproxy.google.com/~r/Securityweek/~3/1tWmeeeh8As/vmware-fixes-several-vulnerabilities-vsphere-platform</guid>
+  </item>
+  <item>
+    <title>DoJ Creating Cybercrime Team (InfoRiskToday)</title>
+    <link>http://www.inforisktoday.com/doj-creating-cybercrime-team-a-7640</link>
+    <guid>http://www.inforisktoday.com/doj-creating-cybercrime-team-a-7640</guid>
+  </item>
+  <item>
+    <title>Vuln: MediaWiki Cross Site Scripting and PHP Code Injection Vulnerabilities (SecurityFocus Vulnerabilities)</title>
+    <link>http://www.securityfocus.com/bid/71473</link>
+    <guid>http://www.securityfocus.com/bid/71473</guid>
+  </item>
+  <item>
+    <title>The state of cybersecurity in the enterprise: 2015 (ZDNet)</title>
+    <link>http://www.zdnet.com/article/the-state-of-cybersecurity-in-the-enterprise-in-2015/#ftag=RSSbaffb68</link>
+    <guid>http://www.zdnet.com/article/the-state-of-cybersecurity-in-the-enterprise-in-2015/#ftag=RSSbaffb68</guid>
+  </item>
+  <item>
+    <title>Zero Day Weekly: Sony hack goes nuclear, banks to sue Target, security seal fallacy (ZDNet)</title>
+    <link>http://www.zdnet.com/article/zero-day-weekly-placeholder/#ftag=RSSbaffb68</link>
+    <guid>http://www.zdnet.com/article/zero-day-weekly-placeholder/#ftag=RSSbaffb68</guid>
+  </item>
+  <item>
+    <title>Corporations Misusing Our Data (Schneier blog)</title>
+    <link>https://www.schneier.com/blog/archives/2014/12/corporations_mi.html</link>
+    <guid>https://www.schneier.com/blog/archives/2014/12/corporations_mi.html</guid>
+  </item>
+  <item>
+    <title>Passport Numbers, Credit Card Details, CVs And 47,000 SSNs: Sony Data Is Cyber Criminal Goldmine (Forbes)</title>
+    <link>http://www.forbes.com/sites/thomasbrewster/2014/12/05/passport-numbers-credit-card-details-and-47000-ssns-sony-data/?ss=Security</link>
+    <guid>http://www.forbes.com/sites/thomasbrewster/2014/12/05/passport-numbers-credit-card-details-and-47000-ssns-sony-data/?ss=Security</guid>
+  </item>
+  <item>
+    <title>'Sign in with LinkedIn' spoof allows baddies to penetrate Slashdot, NASDAQ.com and more (The Register)</title>
+    <link>http://go.theregister.com/feed/www.theregister.co.uk/2014/12/05/top_sites_massive_potential_security_flaw_highlighted/</link>
+    <guid>http://go.theregister.com/feed/www.theregister.co.uk/2014/12/05/top_sites_massive_potential_security_flaw_highlighted/</guid>
+  </item>
+  <item>
+    <title>Apple CoreGraphics framework on OS X 10.10 is logging input data in Mozilla products to /tmp directory (Reddit)</title>
+    <link>http://www.reddit.com/r/netsec/comments/2ocxac/apple_coregraphics_framework_on_os_x_1010_is/</link>
+    <guid>http://www.reddit.com/r/netsec/comments/2ocxac/apple_coregraphics_framework_on_os_x_1010_is/</guid>
+  </item>
+  <item>
+    <title>Bebe Stores confirms payment card security breach (Yahoo Security)</title>
+    <link>http://news.yahoo.com/bebe-stores-confirms-payment-card-security-breach-122833444--finance.html</link>
+    <guid>http://news.yahoo.com/bebe-stores-confirms-payment-card-security-breach-122833444--finance.html</guid>
+  </item>
+  <item>
+    <title>Adobe to patch Acrobat and Reader next week (ZDNet)</title>
+    <link>http://www.zdnet.com/article/adobe-to-patch-acrobat-and-reader-next-week/#ftag=RSSbaffb68</link>
+    <guid>http://www.zdnet.com/article/adobe-to-patch-acrobat-and-reader-next-week/#ftag=RSSbaffb68</guid>
+  </item>
+  <item>
+    <title>Microsoft Increases Support Costs for IT Pros (IT Toolbox Blogs)</title>
+    <link>http://it.toolbox.com/blogs/personal-pc-assistant/microsoft-increases-support-costs-for-it-pros-64856</link>
+    <guid>http://it.toolbox.com/blogs/personal-pc-assistant/microsoft-increases-support-costs-for-it-pros-64856</guid>
+  </item>
+  <item>
+    <title>The latest big leak in the Sony hack is a huge file directory for passwords called Password (Yahoo Security)</title>
+    <link>http://news.yahoo.com/latest-big-leak-sony-hack-huge-file-directory-115054121.html</link>
+    <guid>http://news.yahoo.com/latest-big-leak-sony-hack-huge-file-directory-115054121.html</guid>
+  </item>
+  <item>
+    <title>8 Tools to Help You Unleash Your Lock-Picking Potential (WIRED)</title>
+    <link>http://feeds.wired.com/c/35185/f/661467/s/4126be7c/sc/4/l/0L0Swired0N0C20A140C120Clock0Epicking0Etools0C/story01.htm</link>
+    <guid>http://feeds.wired.com/c/35185/f/661467/s/4126be7c/sc/4/l/0L0Swired0N0C20A140C120Clock0Epicking0Etools0C/story01.htm</guid>
+  </item>
+  <item>
+    <title>China presents US with list of alleged fugitives (Yahoo Security)</title>
+    <link>http://news.yahoo.com/china-presents-us-list-alleged-fugitives-101533149.html</link>
+    <guid>http://news.yahoo.com/china-presents-us-list-alleged-fugitives-101533149.html</guid>
+  </item>
+  <item>
+    <title>Cyberwarfare? New System Protects Drones from Hackers (Yahoo Security)</title>
+    <link>http://news.yahoo.com/cyberwarfare-system-protects-drones-hackers-112821984.html</link>
+    <guid>http://news.yahoo.com/cyberwarfare-system-protects-drones-hackers-112821984.html</guid>
+  </item>
+  <item>
+    <title>Vuln: Oracle MySQL Server CVE-2014-6551 Local Security Vulnerability (SecurityFocus Vulnerabilities)</title>
+    <link>http://www.securityfocus.com/bid/70462</link>
+    <guid>http://www.securityfocus.com/bid/70462</guid>
+  </item>
+  <item>
+    <title>A glimpse into the world of North Korea's hacking elite (ZDNet)</title>
+    <link>http://www.zdnet.com/article/a-glimpse-into-the-world-of-north-koreas-hacking-elite/#ftag=RSSbaffb68</link>
+    <guid>http://www.zdnet.com/article/a-glimpse-into-the-world-of-north-koreas-hacking-elite/#ftag=RSSbaffb68</guid>
+  </item>
+  <item>
+    <title>Ways to improve wireless signals (IT Toolbox Blogs)</title>
+    <link>http://it.toolbox.com/blogs/personal-pc-assistant/ways-to-improve-wireless-signals-64855</link>
+    <guid>http://it.toolbox.com/blogs/personal-pc-assistant/ways-to-improve-wireless-signals-64855</guid>
+  </item>
+  <item>
+    <title>Stupid humans and their EXPENSIVE DATA BREACHES (The Register)</title>
+    <link>http://go.theregister.com/feed/www.theregister.co.uk/2014/12/05/stupid_humans_and_their_data_breaches/</link>
+    <guid>http://go.theregister.com/feed/www.theregister.co.uk/2014/12/05/stupid_humans_and_their_data_breaches/</guid>
+  </item>
+  <item>
+    <title>Vuln: OpenStack Neutron 'dnsnameservers' Parameter Denial of Service Vulnerability (SecurityFocus Vulnerabilities)</title>
+    <link>http://www.securityfocus.com/bid/71278</link>
+    <guid>http://www.securityfocus.com/bid/71278</guid>
+  </item>
+  <item>
+    <title>Sony hack exposed social security numbers of Hollywood celebrities (ZDNet)</title>
+    <link>http://www.zdnet.com/article/sony-hack-exposed-social-security-numbers-of-hollywood-celebrities/#ftag=RSSbaffb68</link>
+    <guid>http://www.zdnet.com/article/sony-hack-exposed-social-security-numbers-of-hollywood-celebrities/#ftag=RSSbaffb68</guid>
+  </item>
+  <item>
+    <title>How the operating system was born. Part 4. (IT Toolbox Blogs)</title>
+    <link>http://it.toolbox.com/blogs/locutus/how-the-operating-system-was-born-part-4-64853</link>
+    <guid>http://it.toolbox.com/blogs/locutus/how-the-operating-system-was-born-part-4-64853</guid>
+  </item>
+  <item>
+    <title>Firefox updated to 34.0 (IT Toolbox Blogs)</title>
+    <link>http://it.toolbox.com/blogs/personal-pc-assistant/firefox-updated-to-340-64854</link>
+    <guid>http://it.toolbox.com/blogs/personal-pc-assistant/firefox-updated-to-340-64854</guid>
+  </item>
+</channel>
+</rss>

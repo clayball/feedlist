@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="/css/rss.css" type="text/css"?>
+<rss version="2.0">
+<channel>
+  <title>SANS Internet Storm Center, InfoCON: green</title>
+  <link>https://isc.sans.edu</link>
+  <description><![CDATA[]]></description>
+  <language>   en-us</language>
+  <lastBuildDate>   Sat, 06 Dec 2014 04:35:01 +0000</lastBuildDate>
+  <pubDate>   Fri, 05 Dec 2014 09:35:14 GMT</pubDate>
+<copyright>(C) SANS Institute 2014</copyright>
+             <generator>isc rss feed maker</generator>
+             <ttl>30</ttl>
+             <webMaster>handlers@sans.org (ISC Handlers)</webMaster>
+             <image>
+               <title>SANS Internet Storm Center, InfoCON: green</title>
+               <url>http://isc.sans.edu/images/status.gif</url>
+               <link>http://isc.sans.edu/rssfeed_full.xml</link>
+             </image>
+  <item>
+    <title>Infocon: green</title>
+    <link>https://isc.sans.edu/diary.html?rss</link>
+    <guid>https://isc.sans.edu/diary.html?rss</guid>
+    <description><![CDATA[VMware new and updated security advisories]]></description>
+  </item>
+  <item>
+    <title>VMware new and updated security advisories, (Fri, Dec 5th)</title>
+    <link>https://isc.sans.edu/diary.html?storyid=19031&amp;rss</link>
+    <guid>https://isc.sans.edu/diary.html?storyid=19031&amp;rss</guid>
+    <description><![CDATA[<p><span style="font-family: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, 'Lucida Grande', sans-s ...(more)... ]]></description>
+    <pubDate>Fri, 05 Dec 2014 09:35:14 GMT</pubDate>
+  </item>
+  <item>
+    <title>
+ISC StormCast for Friday, December 5th 2014 http://isc.sans.edu/podcastdetail.html?id=4263, (Fri, Dec 5th)</title>
+    <link>https://isc.sans.edu/diary.html?storyid=19029&amp;rss</link>
+    <guid>https://isc.sans.edu/diary.html?storyid=19029&amp;rss</guid>
+    <description><![CDATA[ ...(more)... ]]></description>
+    <pubDate>Fri, 05 Dec 2014 03:35:00 GMT</pubDate>
+  </item>
+  <item>
+    <title>
+Automating Incident data collection with Python, (Thu, Dec 4th)</title>
+    <link>https://isc.sans.edu/diary.html?storyid=19025&amp;rss</link>
+    <guid>https://isc.sans.edu/diary.html?storyid=19025&amp;rss</guid>
+    <description><![CDATA[<p>One of my favorite Python modules is<a href="http://corelabs.coresecurity ...(more)... ]]></description>
+    <pubDate>Thu, 04 Dec 2014 02:49:14 GMT</pubDate>
+  </item>
+  <item>
+    <title>
+ISC StormCast for Thursday, December 4th 2014 http://isc.sans.edu/podcastdetail.html?id=4261, (Thu, Dec 4th)</title>
+    <link>https://isc.sans.edu/diary.html?storyid=19027&amp;rss</link>
+    <guid>https://isc.sans.edu/diary.html?storyid=19027&amp;rss</guid>
+    <description><![CDATA[ ...(more)... ]]></description>
+    <pubDate>Thu, 04 Dec 2014 01:50:35 GMT</pubDate>
+  </item>
+  <item>
+    <title>
+ISC StormCast for Wednesday, December 3rd 2014 http://isc.sans.edu/podcastdetail.html?id=4259, (Wed, Dec 3rd)</title>
+    <link>https://isc.sans.edu/diary.html?storyid=19021&amp;rss</link>
+    <guid>https://isc.sans.edu/diary.html?storyid=19021&amp;rss</guid>
+    <description><![CDATA[ ...(more)... ]]></description>
+    <pubDate>Wed, 03 Dec 2014 03:32:58 GMT</pubDate>
+  </item>
+  <item>
+    <title>
+OpenVPN server DoS vulnerability fixed, (Tue, Dec 2nd)</title>
+    <link>https://isc.sans.edu/diary.html?storyid=19019&amp;rss</link>
+    <guid>https://isc.sans.edu/diary.html?storyid=19019&amp;rss</guid>
+    <description><![CDATA[<p>The OpenVPN folks released a <a href="https://community.openvpn ...(more)... ]]></description>
+    <pubDate>Wed, 03 Dec 2014 00:09:44 GMT</pubDate>
+  </item>
+  <item>
+    <title>
+Does Your Vulnerability Scanner Speak Portuguese?, (Tue, Dec 2nd)</title>
+    <link>https://isc.sans.edu/diary.html?storyid=19017&amp;rss</link>
+    <guid>https://isc.sans.edu/diary.html?storyid=19017&amp;rss</guid>
+    <description><![CDATA[<p>Rodrigo Montoro and Joaquim Espinharadid an interesting test, and like so many interesting tests, ...(more)... ]]></description>
+    <pubDate>Tue, 02 Dec 2014 18:39:53 GMT</pubDate>
+  </item>
+  <item>
+    <title>
+We will be performing some extensive updates to our backend today. Sorry for any outages/errors you may be seeing. , (Tue, Dec 2nd)</title>
+    <link>https://isc.sans.edu/diary.html?storyid=19015&amp;rss</link>
+    <guid>https://isc.sans.edu/diary.html?storyid=19015&amp;rss</guid>
+    <description><![CDATA[<p>---<br />
+Johannes B. Ullrich, Ph ...(more)... ]]></description>
+    <pubDate>Tue, 02 Dec 2014 13:50:06 GMT</pubDate>
+  </item>
+  <item>
+    <title>
+ISC StormCast for Tuesday, December 2nd 2014 http://isc.sans.edu/podcastdetail.html?id=4257, (Tue, Dec 2nd)</title>
+    <link>https://isc.sans.edu/diary.html?storyid=19013&amp;rss</link>
+    <guid>https://isc.sans.edu/diary.html?storyid=19013&amp;rss</guid>
+    <description><![CDATA[ ...(more)... ]]></description>
+    <pubDate>Tue, 02 Dec 2014 01:54:50 GMT</pubDate>
+  </item>
+  <item>
+    <title>
+Dridex Phishing Campaign uses Malicious Word Documents, (Mon, Dec 1st)</title>
+    <link>https://isc.sans.edu/diary.html?storyid=19011&amp;rss</link>
+    <guid>https://isc.sans.edu/diary.html?storyid=19011&amp;rss</guid>
+    <description><![CDATA[<p><span style="background-color:#E6E6FA;">This is a guest diary submitted by Brad Duncan.</span></p ...(more)... ]]></description>
+    <pubDate>Mon, 01 Dec 2014 17:48:11 GMT</pubDate>
+  </item>
+</channel>
+</rss>

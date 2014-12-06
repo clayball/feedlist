@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0" xml:base="https://www.us-cert.gov/ncas/alerts">
+  <channel>
+    <title>US-CERT Alerts</title>
+    <link>https://www.us-cert.gov/ncas/alerts</link>
+    <description>Alerts warn about vulnerabilities, incidents, and other security issues that pose a significant risk.</description>
+    <language>en</language>
+        
+<item>
+	<title>TA14-329A: Regin Malware</title>
+	<link>https://www.us-cert.gov/ncas/alerts/TA14-329A</link>
+	<description><![CDATA[
+
+		Original release date: November 25, 2014<br />
+		<h3>Systems Affected</h3>
+		<p>Microsoft Windows NT, 2000, XP, Vista, and 7</p>		
+		<h3>Overview</h3>
+		<p>On November 24, 2014, Symantec released a report on Regin, a sophisticated backdoor Trojan used to conduct intelligence-gathering campaigns. At this time, the Regin campaign has not been identified targeting any organizations within the United States.</p>		
+		<h3>Description</h3>
+		<p>Regin is a multi-staged, modular threat—meaning it has a number of components, each dependent on others to perform an attack. Each of the five stages is hidden and encrypted, with the exception of the first stage. The modular design poses difficulties to analysis, as all components must be available in order to fully understand the Trojan.  </p>		
+		<h3>Impact</h3>
+		<p>Regin is a remote access Trojan (RAT), able to take control of input devices, capture credentials, monitor network traffic, and gather information on processes and memory utilization. The complex design provides flexibility to actors, as they can load custom features tailored to individual targets. [<a href="http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/regin-analysis.pdf">1</a>]</p>		
+		<h3>Solution</h3>
+		<p>Users and administrators are recommended to take the following preventive measures to protect their computer networks:</p><ul><li><em>Use and maintain anti-virus software</em> – Anti-virus software recognizes and protects your computer against most known viruses. It is important to keep your anti-virus software up-to-date (see <a href="https://www.us-cert.gov/ncas/tips/ST04-005">Understanding Anti-Virus Software</a> for more information). [<a href="https://www.virustotal.com/en/file/b12c7d57507286bbbe36d7acf9b34c22c96606ffd904e3c23008399a4a50c047/analysis/">2</a>]</li><li><em>Keep your operating system and application software up-to-date</em> – Install software patches so that attackers can't take advantage of known problems or vulnerabilities. Many operating systems offer automatic updates. If this option is available, you should enable it (see <a href="https://www.us-cert.gov/ncas/tips/ST04-006">Understanding Patches</a> for more information).</li></ul><p>The following is a list of the Indicators of Compromise (IOCs) that can be added to network security solutions to determine whether they are present on a network.</p><p><strong>MD5s: [<a href="http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/regin-analysis.pdf">1</a>]</strong></p><p><strong>Stage 1 files, 32 bit:</strong></p><p style="margin-left: 40px;">06665b96e293b23acc80451abb413e50</p><p style="margin-left: 40px;">187044596bc1328efa0ed636d8aa4a5c</p><p style="margin-left: 40px;">1c024e599ac055312a4ab75b3950040a</p><p style="margin-left: 40px;">2c8b9d2885543d7ade3cae98225e263b</p><p style="margin-left: 40px;">4b6b86c7fec1c574706cecedf44abded</p><p style="margin-left: 40px;">6662c390b2bbbd291ec7987388fc75d7</p><p style="margin-left: 40px;">b269894f434657db2b15949641a67532</p><p style="margin-left: 40px;">b29ca4f22ae7b7b25f79c1d4a421139d</p><p style="margin-left: 40px;">b505d65721bb2453d5039a389113b566</p><p style="margin-left: 40px;">26297dc3cd0b688de3b846983c5385e5</p><p style="margin-left: 40px;">ba7bb65634ce1e30c1e5415be3d1db1d</p><p style="margin-left: 40px;">bfbe8c3ee78750c3a520480700e440f8</p><p style="margin-left: 40px;">d240f06e98c8d3e647cbf4d442d79475</p><p style="margin-left: 40px;">ffb0b9b5b610191051a7bdf0806e1e47</p><p><strong>Unusual stage 1 files apparently compiled from various public source codes merged with malicious code:</strong></p><p style="margin-left: 40px;">01c2f321b6bfdb9473c079b0797567ba</p><p style="margin-left: 40px;">47d0e8f9d7a6429920329207a32ecc2e</p><p style="margin-left: 40px;">744c07e886497f7b68f6f7fe57b7ab54</p><p style="margin-left: 40px;">db405ad775ac887a337b02ea8b07fddc</p><p><strong>Stage 1, 64-bit system infection:</strong></p><p style="margin-left: 40px;">bddf5afbea2d0eed77f2ad4e9a4f044d</p><p style="margin-left: 40px;">c053a0a3f1edcbbfc9b51bc640e808ce</p><p style="margin-left: 40px;">e63422e458afdfe111bd0b87c1e9772c</p><p><strong>Stage 2, 32 bit:</strong></p><p style="margin-left: 40px;">18d4898d82fcb290dfed2a9f70d66833</p><p style="margin-left: 40px;">b9e4f9d32ce59e7c4daf6b237c330e25</p><p><strong>Stage 2, 64 bit:</strong></p><p style="margin-left: 40px;">d446b1ed24dad48311f287f3c65aeb80</p><p><strong>Stage 3, 32 bit:</strong></p><p style="margin-left: 40px;">8486ec3112e322f9f468bdea3005d7b5</p><p style="margin-left: 40px;">da03648948475b2d0e3e2345d7a9bbbb</p><p><strong>Stage 4, 32 bit:</strong></p><p style="margin-left: 40px;">1e4076caa08e41a5befc52efd74819ea</p><p style="margin-left: 40px;">68297fde98e9c0c29cecc0ebf38bde95</p><p style="margin-left: 40px;">6cf5dc32e1f6959e7354e85101ec219a</p><p style="margin-left: 40px;">885dcd517faf9fac655b8da66315462d</p><p style="margin-left: 40px;">a1d727340158ec0af81a845abd3963c1</p><p><strong>Stage 4, 64 bit:</strong></p><p style="margin-left: 40px;">de3547375fbf5f4cb4b14d53f413c503</p><p><em>Note: Stages 2, 3, and 4 do not appear on infected systems as real files on disk. Hashes are provided for research purposes only.</em></p><p><strong>Registry branches used to store malware stages 2 and 3:</strong></p><p style="margin-left: 40px;">\REGISTRY\Machine\System\CurrentControlSet\Control\RestoreList</p><p style="margin-left: 40px;">\REGISTRY\Machine\System\CurrentControlSet\Control\Class\{39399744-44FC-AD65-474B-E4DDF-8C7FB97}</p><p style="margin-left: 40px;">\REGISTRY\Machine\System\CurrentControlSet\Control\Class\{3F90B1B4-58E2-251E-6FFE-4D38C5631A04}</p><p style="margin-left: 40px;">\REGISTRY\Machine\System\CurrentControlSet\Control\Class\{4F20E605-9452-4787-B793-D0204917CA58}</p><p style="margin-left: 40px;">\REGISTRY\Machine\System\CurrentControlSet\Control\Class\{9B9A8ADB-8864-4BC4-8AD5-B17DFDBB9F58}</p><p><strong>IP IOCs [<a href="http://securelist.com/files/2014/11/Kaspersky_Lab_whitepaper_Regin_platform_eng.pdf">3</a>]:</strong></p><p style="margin-left: 40px;">61.67.114.73</p><p style="margin-left: 40px;">202.71.144.113</p><p style="margin-left: 40px;">203.199.89.80</p><p style="margin-left: 40px;">194.183.237.145</p>		
+		<h3>References</h3>
+		<ul>
+					<li><a href="http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/regin-analysis.pdf">[1] Symantec "Regin: Top-tier espionage tool enables stealthy surveillance"</a></li>
+					<li><a href="https://www.virustotal.com/en/file/b12c7d57507286bbbe36d7acf9b34c22c96606ffd904e3c23008399a4a50c047/analysis/">[2] VirusTotal Analysis of a Regin Binary</a></li>
+					<li><a href="http://securelist.com/files/2014/11/Kaspersky_Lab_whitepaper_Regin_platform_eng.pdf">[3] Kaspersky "The Regin Platform Nation-State Ownage of GSM Networks"</a></li>
+				</ul>
+		
+		<h3>Revision History</h3>
+		<ul>
+					<li>November 25, 2014: Initial Release</li>
+					</ul>
+		<hr />
+		<p>This product is provided subject to this <a href="http://www.us-cert.gov/privacy/notification">Notification</a> and this <a href="http://www.us-cert.gov/privacy/">Privacy &amp; Use</a> policy.</p>		<br />
+	]]>
+	</description>
+	 <pubDate>Tue, 25 Nov 2014 20:54:41 +0000</pubDate>
+ <dc:creator>US-CERT</dc:creator>
+ <guid isPermaLink="false">6002 at https://www.us-cert.gov</guid>
+</item>
+<item>
+	<title>TA14-323A: Microsoft Windows Kerberos KDC Remote Privilege Escalation Vulnerability </title>
+	<link>https://www.us-cert.gov/ncas/alerts/TA14-323A</link>
+	<description><![CDATA[
+
+		Original release date: November 19, 2014 | Last revised: November 25, 2014<br />
+		<h3>Systems Affected</h3>
+		<ul><li>Microsoft Windows Vista, 7, 8, and 8.1</li><li>Microsoft Server 2003, Server 2008, Server 2008 R2, Server 2012, and Server 2012 R2</li></ul>		
+		<h3>Overview</h3>
+		<p>A remote escalation of privilege vulnerability exists in implementations of Kerberos Key Distribution Center (KDC) in Microsoft Windows which could allow a remote attacker to take control of a vulnerable system. [<a href="http://1.&#9;https://technet.microsoft.com/library/security/MS14-068">1</a>]</p>		
+		<h3>Description</h3>
+		<p>The Microsoft Windows Kerberos KDC fails to properly check service tickets for valid signatures, which can allow aspects of the service ticket to be forged. The improper check allows an attacker to escalate valid domain user account privileges to those of a domain administrator account, which renders the entire domain vulnerable to compromise.</p><p>At the time this release was issued, Microsoft was aware of limited, targeted attacks attempting to exploit this vulnerability.</p>		
+		<h3>Impact</h3>
+		<p>A valid domain user can pass invalid domain administrator credentials, gain access and compromise any system on the domain, including the domain controller. [<a href="http://www.kb.cert.org/vuls/id/213119">2</a>]</p>		
+		<h3>Solution</h3>
+		<p>An update is available from Microsoft. Please see Microsoft Security Bulletin MS14-068 and Microsoft Research Security and Defense Blog for more details, and apply the necessary updates.[<a href="http://technet.microsoft.com/library/security/MS14-068">1</a>, <a href="http://blogs.technet.com/b/srd/archive/2014/11/18/additional-information-about-cve-2014-6324.aspx">3</a>] </p>		
+		<h3>References</h3>
+		<ul>
+					<li><a href="https://technet.microsoft.com/library/security/MS14-068">[1] Microsoft Security Bulletin MS14-068 </a></li>
+					<li><a href="http://www.kb.cert.org/vuls/id/213119">[2] Vulnerability Note VU#213119</a></li>
+					<li><a href="http://blogs.technet.com/b/srd/archive/2014/11/18/additional-information-about-cve-2014-6324.aspx">[3] Microsoft Security Research and Defense Blog</a></li>
+				</ul>
+		
+		<h3>Revision History</h3>
+		<ul>
+					<li>November 19, 2014: Initial Draft </li>
+						<li>November 25, 2014: Revised formatting</li>
+					</ul>
+		<hr />
+		<p>This product is provided subject to this <a href="http://www.us-cert.gov/privacy/notification">Notification</a> and this <a href="http://www.us-cert.gov/privacy/">Privacy &amp; Use</a> policy.</p>		<br />
+	]]>
+	</description>
+	 <pubDate>Wed, 19 Nov 2014 08:20:04 +0000</pubDate>
+ <dc:creator>US-CERT</dc:creator>
+ <guid isPermaLink="false">5996 at https://www.us-cert.gov</guid>
+</item>
+<item>
+	<title>TA14-318B: Microsoft Windows OLE Automation Array Remote Code Execution Vulnerability </title>
+	<link>https://www.us-cert.gov/ncas/alerts/TA14-318B</link>
+	<description><![CDATA[
+
+		Original release date: November 14, 2014<br />
+		<h3>Systems Affected</h3>
+		<ul><li>Microsoft Windows Vista, 7, 8, 8.1, RT, and RT 8.1</li><li>Microsoft Server 2003, Server 2008, Server 2008 R2, Server 2012, and Server 2012 R2</li></ul>		
+		<h3>Overview</h3>
+		<p>A vulnerability in Microsoft Windows Object Linking and Embedding (OLE) could allow remote code execution if a user views a specially-crafted web page in Internet Explorer.<a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6332">[1]</a></p>		
+		<h3>Description</h3>
+		<p>The Microsoft Windows OLE OleAut32.dll library provides the SafeArrayRedim function that allows resizing of SAFEARRAY objects in memory.<a href="http://securityintelligence.com/ibm-x-force-researcher-finds-significant-vulnerability-in-microsoft-windows/">[2]</a> In certain circumstances, this library does not properly check sizes of arrays when an error occurs. The improper size allows an attacker to manipulate memory in a way that can bypass the Internet Explorer Enhanced Protected Mode (EPM) sandbox as well as the Enhanced Mitigation Experience Toolkit (EMET).</p><p>This vulnerability can be exploited using a specially-crafted web page utilizing VBscript in Internet Explorer. However, it may impact other software that makes use of OleAut32.dll and VBscript.</p><p>Exploit code is publicly available for this vulnerability. Additional details may be found in CERT/CC Vulnerability Note <a href="http://www.kb.cert.org/vuls/id/158647">VU#158647</a>.</p>		
+		<h3>Impact</h3>
+		<p>Arbitrary code can be run on the computer with user privileges. If the user is an administrator, the attacker may run arbitrary code as an administrator, fully compromising the system. </p>		
+		<h3>Solution</h3>
+		<p>An update is available from Microsoft.<a href="https://technet.microsoft.com/library/security/MS14-064">[3]</a> Please see Microsoft Security Bulletin MS14-064 for more details and mitigation guidance, and apply the necessary updates.</p>		
+		<h3>References</h3>
+		<ul>
+					<li><a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6332">[1] NIST Vulnerability Summary for CVE-2014-6332</a></li>
+					<li><a href="http://securityintelligence.com/ibm-x-force-researcher-finds-significant-vulnerability-in-microsoft-windows/">[2] IBM X-Force Researcher Finds Significant Vulnerability in Microsoft Windows</a></li>
+					<li><a href="https://technet.microsoft.com/library/security/MS14-064">[3] Microsoft Security Bulletin MS14-064 </a></li>
+				</ul>
+		
+		<h3>Revision History</h3>
+		<ul>
+					<li>November 14, 2014: Initial Release</li>
+					</ul>
+		<hr />
+		<p>This product is provided subject to this <a href="http://www.us-cert.gov/privacy/notification">Notification</a> and this <a href="http://www.us-cert.gov/privacy/">Privacy &amp; Use</a> policy.</p>		<br />
+	]]>
+	</description>
+	 <pubDate>Fri, 14 Nov 2014 22:42:35 +0000</pubDate>
+ <dc:creator>US-CERT</dc:creator>
+ <guid isPermaLink="false">5989 at https://www.us-cert.gov</guid>
+</item>
+<item>
+	<title>TA14-318A: Microsoft Secure Channel (Schannel) Vulnerability (CVE-2014-6321) </title>
+	<link>https://www.us-cert.gov/ncas/alerts/TA14-318A</link>
+	<description><![CDATA[
+
+		Original release date: November 14, 2014<br />
+		<h3>Systems Affected</h3>
+		<ul><li>Microsoft Windows Vista, 7, 8, 8.1, RT, and RT 8.1</li><li>Microsoft Server 2003, Server 2008, Server 2008 R2, Server 2012, and Server 2012 R2</li></ul><p>Microsoft Windows XP and 2000 may also be affected.</p>		
+		<h3>Overview</h3>
+		<p>A critical vulnerability in Microsoft Windows systems could allow a remote attacker to execute arbitrary code via specially crafted network traffic.<a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6321">[1]</a></p>		
+		<h3>Description</h3>
+		<p>Microsoft Secure Channel (Schannel) is a security package that provides SSL and TLS on Microsoft Windows platforms.[<a href="https://technet.microsoft.com/library/security/MS14-066">2</a>, <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/aa380123%28v=vs.85%29.aspx">3</a>] Due to a flaw in Schannel, a remote attacker could execute arbitrary code on both client and server applications.<a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6321">[1]</a></p><p>It may be possible for exploitation to occur without authentication and via unsolicited network traffic. According to Microsoft MS14-066, there are no known mitigations or workarounds.<a href="https://technet.microsoft.com/library/security/MS14-066">[2]</a></p><p>Microsoft patches are typically reverse-engineered and exploits developed in a matter of days or weeks.<a href="http://www.reddit.com/r/netsec/comments/2m1alz/microsoft_security_bulletin_ms14066/">[4]</a> An anonymous Pastebin user has threatened to publish an exploit on Friday, November 14, 2014.<a href="http://pastebin.com/bsgX01dU">[5]</a></p>		
+		<h3>Impact</h3>
+		<p>This flaw allows a remote attacker to execute arbitrary code and fully compromise vulnerable systems.<a href="http://adi.is/winshock.txt">[6]</a></p>		
+		<h3>Solution</h3>
+		<p>Microsoft has released Security Bulletin MS14-066 to address this vulnerability in supported operating systems.<a href="https://technet.microsoft.com/library/security/MS14-066">[2]</a></p>		
+		<h3>References</h3>
+		<ul>
+					<li><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6321">[1] NIST Vulnerability Summary for CVE-2014-6321</a></li>
+					<li><a href="https://technet.microsoft.com/library/security/MS14-066">[2] Microsoft Security Bulletin MS14-066 - Critical </a></li>
+					<li><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/aa380123%28v=vs.85%29.aspx">[3] Microsoft, Secure Channel</a></li>
+					<li><a href="http://www.reddit.com/r/netsec/comments/2m1alz/microsoft_security_bulletin_ms14066/">[4] Reddit, Microsoft Security Bulletin MS14-066 </a></li>
+					<li><a href="http://pastebin.com/bsgX01dU">[5] Pastebin, SChannelShenanigans</a></li>
+					<li><a href="http://adi.is/winshock.txt">[6] Winshock.txt</a></li>
+				</ul>
+		
+		<h3>Revision History</h3>
+		<ul>
+					<li>November 14, 2014: Initial Release</li>
+					</ul>
+		<hr />
+		<p>This product is provided subject to this <a href="http://www.us-cert.gov/privacy/notification">Notification</a> and this <a href="http://www.us-cert.gov/privacy/">Privacy &amp; Use</a> policy.</p>		<br />
+	]]>
+	</description>
+	 <pubDate>Fri, 14 Nov 2014 15:32:02 +0000</pubDate>
+ <dc:creator>US-CERT</dc:creator>
+ <guid isPermaLink="false">5988 at https://www.us-cert.gov</guid>
+</item>
+<item>
+	<title>TA14-317A: Apple iOS "Masque Attack" Technique</title>
+	<link>https://www.us-cert.gov/ncas/alerts/TA14-317A</link>
+	<description><![CDATA[
+
+		Original release date: November 13, 2014 | Last revised: November 17, 2014<br />
+		<h3>Systems Affected</h3>
+		<p>iOS devices running iOS 7.1.1, 7.1.2, 8.0, 8.1, and 8.1.1 beta.</p>		
+		<h3>Overview</h3>
+		<p>A technique labeled “Masque Attack” allows an attacker to substitute malware for a legitimate iOS app under a limited set of circumstances.</p>		
+		<h3>Description</h3>
+		<p>Masque Attack was described by FireEye mobile security researchers <a href="http://www.fireeye.com/blog/technical/cyber-exploits/2014/11/masque-attack-all-your-ios-apps-belong-to-us.html">[1]</a>, Stefan Esser of SektionEins, and Jonathan Zdziarski. This attack works by luring users to install an app from a source other than the iOS App Store or their organizations’ provisioning system. In order for the attack to succeed, a user must install an untrusted app, such as one delivered through a phishing link.  </p><p>This technique takes advantage of a security weakness that allows an untrusted app—with the same “bundle identifier” as that of a legitimate app—to replace the legitimate app on an affected device, while keeping all of the user’s data. This vulnerability exists because iOS does not enforce matching certificates for apps with the same bundle identifier. Apple’s own iOS platform apps, such as Mobile Safari, are not vulnerable.</p>		
+		<h3>Impact</h3>
+		<p>An app installed on an iOS device using this technique may:</p><ul><li>Mimic the original app’s login interface to steal the victim’s login credentials.</li><li>Access sensitive data from local data caches.</li><li>Perform background monitoring of the user’s device.</li><li>Gain root privileges to the iOS device.</li><li>Be indistinguishable from a genuine app.</li></ul>		
+		<h3>Solution</h3>
+		<p>iOS users can protect themselves from Masque Attacks by following three steps:</p><ol style="margin-left: 40px;"><li>Don’t install apps from sources other than Apple’s official App Store or your own organization.</li><li>Don’t click “Install” from a third-party pop-up when viewing a web page.</li><li>When opening an app, if iOS shows an “Untrusted App Developer” alert, click on “Don’t Trust” and uninstall the app immediately.</li></ol><p>Further details on Masque Attack and mitigation guidance can be found on FireEye’s blog <a href="http://www.fireeye.com/blog/technical/cyber-exploits/2014/11/masque-attack-all-your-ios-apps-belong-to-us.html">[1]</a>. US-CERT does not endorse or support any particular product or vendor.</p>		
+		<h3>References</h3>
+		<ul>
+					<li><a href="http://www.fireeye.com/blog/technical/cyber-exploits/2014/11/masque-attack-all-your-ios-apps-belong-to-us.html">[1] FireEye</a></li>
+				</ul>
+		
+		<h3>Revision History</h3>
+		<ul>
+					<li>November 13, 2014: Initial Release   </li>
+						<li>November 17, 2014: Vulnerability attribution amended</li>
+					</ul>
+		<hr />
+		<p>This product is provided subject to this <a href="http://www.us-cert.gov/privacy/notification">Notification</a> and this <a href="http://www.us-cert.gov/privacy/">Privacy &amp; Use</a> policy.</p>		<br />
+	]]>
+	</description>
+	 <pubDate>Thu, 13 Nov 2014 14:17:34 +0000</pubDate>
+ <dc:creator>US-CERT</dc:creator>
+ <guid isPermaLink="false">5986 at https://www.us-cert.gov</guid>
+</item>
+<item>
+	<title>TA14-310A: Microsoft Ending Support for Windows Server 2003 Operating System</title>
+	<link>https://www.us-cert.gov/ncas/alerts/TA14-310A</link>
+	<description><![CDATA[
+
+		Original release date: November 10, 2014<br />
+		<h3>Systems Affected</h3>
+		<p>Microsoft Windows Server 2003 operating system</p>		
+		<h3>Overview</h3>
+		<p>Microsoft is ending support for the Windows Server 2003 operating system on July 14, 2015.<a href="http://support2.microsoft.com/lifecycle/search/default.aspx?alpha=Windows+Server+2003+R2">[1]</a> After this date, this product will no longer receive:</p><ul><li>Security patches that help protect PCs from harmful viruses, spyware, and other malicious software</li><li>Assisted technical support from Microsoft</li><li>Software and content updates</li></ul>		
+		<h3>Description</h3>
+		<p>All software products have a lifecycle. End of support refers to the date when Microsoft will no longer provide automatic fixes, updates, or online technical assistance.<a href="http://support2.microsoft.com/gp/lifepolicy">[2]</a> As of July 2014, there were 12 million physical servers worldwide still running Windows Server 2003.<a href="http://redmondmag.com/articles/2014/09/18/server-2003-end-of-support.aspx">[3]</a></p>		
+		<h3>Impact</h3>
+		<p>Computer systems running unsupported software are exposed to an elevated risk to cybersecurity dangers, such as malicious attacks or electronic data loss.</p><p>Users may also encounter problems with software and hardware compatibility since new software applications and hardware devices may not be built for Windows Server 2003.</p><p>Organizations that are governed by regulatory obligations may find they are no longer able to satisfy compliance requirements while running Windows Server 2003.</p>		
+		<h3>Solution</h3>
+		<p>Computers running the Windows Server 2003 operating system will continue to work after support ends. However, using unsupported software may increase the risks of viruses and other security threats. Negative consequences could include loss of confidentiality, integrity, and or availability of data, system resources and business assets.</p><p>The Microsoft "Microsoft Support Lifecycle Policy FAQ" page offers additional details.<a href="http://support2.microsoft.com/gp/lifepolicy">[2]</a></p><p>Users have the option to upgrade to a currently supported operating system or other cloud-based services. There are software vendors and service providers in the marketplace who offer assistance in migrating from Windows Server 2003 to a currently supported operating system or SaaS (software as a service) / IaaS (infrastructure as a service) products and services.[<a href="http://www.microsoft.com/en-us/server-cloud/products/windows-server-2003/">4</a>,<a href="http://searchwindowsserver.techtarget.com/feature/Weighing-next-steps-following-Windows-Server-2003-end-of-life">5</a>] US-CERT does not endorse or support any particular product or vendor.</p>		
+		<h3>References</h3>
+		<ul>
+					<li><a href="http://support2.microsoft.com/lifecycle/search/default.aspx?alpha=Windows%20Server%202003%20R2">[1] Microsoft Product Lifecycle Listing</a></li>
+					<li><a href="http://support2.microsoft.com/gp/lifepolicy">[2] Microsoft Support Lifecycle Policy FAQ</a></li>
+					<li><a href="http://redmondmag.com/articles/2014/09/18/server-2003-end-of-support.aspx">[3] Redmond Magazine, Prepare for Windows Server 2003's End of Support</a></li>
+					<li><a href="http://www.microsoft.com/en-us/server-cloud/products/windows-server-2003/">[4] Windows Server 2003 Migration Support</a></li>
+					<li><a href="http://searchwindowsserver.techtarget.com/feature/Weighing-next-steps-following-Windows-Server-2003-end-of-life">[5] TechTarget, Weighing next steps following Windows Server 2003 end-of-life</a></li>
+				</ul>
+		
+		<h3>Revision History</h3>
+		<ul>
+					<li>November 10, 2014: Initial Release</li>
+					</ul>
+		<hr />
+		<p>This product is provided subject to this <a href="http://www.us-cert.gov/privacy/notification">Notification</a> and this <a href="http://www.us-cert.gov/privacy/">Privacy &amp; Use</a> policy.</p>		<br />
+	]]>
+	</description>
+	 <pubDate>Mon, 10 Nov 2014 12:19:01 +0000</pubDate>
+ <dc:creator>US-CERT</dc:creator>
+ <guid isPermaLink="false">5980 at https://www.us-cert.gov</guid>
+</item>
+<item>
+	<title>TA14-300A: Phishing Campaign Linked with “Dyre” Banking Malware</title>
+	<link>https://www.us-cert.gov/ncas/alerts/TA14-300A</link>
+	<description><![CDATA[
+
+		Original release date: October 27, 2014 | Last revised: October 28, 2014<br />
+		<h3>Systems Affected</h3>
+		<p>Microsoft Windows</p>		
+		<h3>Overview</h3>
+		<p>Since mid-October 2014, a phishing campaign has targeted a wide variety of recipients while employing the Dyre/Dyreza banking malware. Elements of this phishing campaign vary from target to target including senders, attachments, exploits, themes, and payload(s).<a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2729">[1]</a><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0188">[2]</a> Although this campaign uses various tactics, the actor’s intent is to entice recipients into opening attachments and downloading malware.</p>		
+		<h3>Description</h3>
+		<p>The Dyre banking malware specifically targets sensitive user account credentials. The malware has the ability to capture user login information and send the captured data to malicious actors.<a href="http://www.pcworld.com/article/2364360/new-powerful-banking-malware-called-dyreza-emerges.html">[3]</a> Phishing emails used in this campaign often contain a weaponized PDF attachment which attempts to exploit vulnerabilities found in unpatched versions of Adobe Reader.<a href="http://www.adobe.com/support/security/bulletins/apsb13-15.html">[4]</a><a href="http://www.adobe.com/support/security/bulletins/apsb10-07.html">[5]</a> After successful exploitation, a user's system will download Dyre banking malware. All of the major anti-virus vendors have successfully detected this malware prior to the release of this alert.<a href="https://www.virustotal.com/en/file/6b6fdc4b116802728ec763ac7b25472046465dd0cf58146b3755e7efcb83f135/analysis/">[6]</a></p><p>Please note, the below listing of indicators does not represent all characteristics and indicators for this campaign.</p><p><strong><u>Phishing Email Characteristics:</u></strong></p><ul><li>Subject: "Unpaid invoic" (<strong>Spelling errors in the subject line are a characteristic of this campaign</strong>)</li><li>Attachment: Invoice621785.pdf</li></ul><p><strong><u>System Level Indicators (upon successful exploitation):</u></strong></p><ul><li>Copies itself under C:\Windows\[RandomName].exe</li><li>Created a Service named "Google Update Service" by setting the following registry keys:<ul><li>HKLM\SYSTEM\CurrentControlSet\Services\googleupdate\ImagePath: "C:\WINDOWS\pfdOSwYjERDHrdV.exe"</li><li>HKLM\SYSTEM\CurrentControlSet\Services\googleupdate\DisplayName: "Google Update Service"<a href="http://www.cisecurity.org/cyber-alerts/2014/20141016.cfm">[7]</a></li></ul></li></ul>		
+		<h3>Impact</h3>
+		<p>A system infected with Dyre banking malware will attempt to harvest credentials for online services, including banking services.</p>		
+		<h3>Solution</h3>
+		<p>Users and administrators are recommended to take the following preventive measures to protect their computer networks from phishing campaigns:</p><ul><li>Do not follow unsolicited web links in email. Refer to the <a href="https://www.us-cert.gov/ncas/tips/st04-014">Security Tip Avoiding Social Engineering and Phishing Attacks</a> <a href="https://www.us-cert.gov/ncas/tips/st04-014">[8]</a> for more information on social engineering attacks.</li><li>Use caution when opening email attachments. For information on safely handling email attachments, see <a href="https://www.us-cert.gov/sites/default/files/publications/emailscams_0905.pdf">Recognizing and Avoiding Email Scams</a>.<a href="https://www.uscert.gov/sites/default/files/publications/emailscams_0905.pdf">[9]</a></li><li>Follow safe practices when browsing the web. See <a href="https://www.us-cert.gov/ncas/tips/ST04-003">Good Security Habits</a> <a href="https://www.us-cert.gov/ncas/tips/ST04-003">[10]</a>and <a href="https://www.us-cert.gov/ncas/tips/ST06-008">Safeguarding Your Data</a> <a href="https://www.us-cert.gov/ncas/tips/ST06-008">[11] </a>for additional details.</li><li>Maintain up-to-date anti-virus software.</li><li>Keep your operating system and software up-to-date with the latest patches.</li></ul><p>US-CERT collects phishing email messages and website locations so that we can help people avoid becoming victims of phishing scams.</p><p>You can report phishing to us by sending email to <a href="mailto:phishing-report@us-cert.gov">phishing-report@us-cert.gov</a>.</p>		
+		<h3>References</h3>
+		<ul>
+					<li><a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-2729">[1] MITRE Summary of CVE-2013-2729, accessed October 16, 2014</a></li>
+					<li><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2010-0188">[2] MITRE Summary of CVE-2010-0188, accessed October 16, 2014</a></li>
+					<li><a href="http://www.pcworld.com/article/2364360/new-powerful-banking-malware-called- dyreza-emerges.html">[3] New Banking Malware Dyreza, accessed October 16, 2014</a></li>
+					<li><a href="http://www.adobe.com/support/security/bulletins/apsb13-15.html">[4] Adobe Security Updates Addressing CVE-2013-2729, accessed October 16, 2014</a></li>
+					<li><a href="http://www.adobe.com/support/security/bulletins/apsb10-07.html">[5] Adobe Security Updates Addressing CVE-2010-0188, accessed October 16, 2014</a></li>
+					<li><a href="https://www.virustotal.com/en/file/6b6fdc4b116802728ec763ac7b25472046465dd0cf58146b3755e7efcb83f135/analysis/">[6] VirusTotal Analysis, accessed October 16, 2014</a></li>
+					<li><a href="http://www.cisecurity.org/cyber-alerts/2014/20141016.cfm">[7] MS-ISAC CIS CYBER ALERT</a></li>
+					<li><a href="https://www.us-cert.gov/ncas/tips/st04-014">[8] US-CERT Security Tip (ST04-014) Avoiding Social Engineering and Phishing Attacks</a></li>
+					<li><a href="https://www.uscert.gov/sites/default/files/publications/emailscams_0905.pdf">[9] US-CERT Recognizing and Avoiding Email Scams</a></li>
+					<li><a href="https://www.us-cert.gov/ncas/tips/ST04-003">[10] US-CERT Security Tip (ST04-003) Good Security Habits</a></li>
+					<li><a href="https://www.us-cert.gov/ncas/tips/ST06-008">[11] US-CERT Security Tip (ST06-008) Safeguarding Your Data</a></li>
+				</ul>
+		
+		<h3>Revision History</h3>
+		<ul>
+					<li>October 27, 2014: Initial Release</li>
+						<li>October 28, 2014: Added Reference 7 in Description Section</li>
+					</ul>
+		<hr />
+		<p>This product is provided subject to this <a href="http://www.us-cert.gov/privacy/notification">Notification</a> and this <a href="http://www.us-cert.gov/privacy/">Privacy &amp; Use</a> policy.</p>		<br />
+	]]>
+	</description>
+	 <pubDate>Mon, 27 Oct 2014 16:10:20 +0000</pubDate>
+ <dc:creator>US-CERT</dc:creator>
+ <guid isPermaLink="false">5975 at https://www.us-cert.gov</guid>
+</item>
+<item>
+	<title>TA14-295A: Crypto Ransomware</title>
+	<link>https://www.us-cert.gov/ncas/alerts/TA14-295A</link>
+	<description><![CDATA[
+
+		Original release date: October 22, 2014 | Last revised: October 24, 2014<br />
+		<h3>Systems Affected</h3>
+		<p>Microsoft Windows</p>		
+		<h3>Overview</h3>
+		<p>Ransomware is a type of malicious software (malware) that infects a computer and restricts access to it until a ransom is paid to unlock it. This Alert is the result of Canadian Cyber Incident Response Centre (CCIRC) analysis in coordination with the United States Department of Homeland Security (DHS) to provide further information about crypto ransomware, specifically to:</p><ul><li>Present its main characteristics, explain the prevalence of ransomware, and the proliferation of crypto ransomware variants; and</li><li>Provide prevention and mitigation information.</li></ul>		
+		<h3>Description</h3>
+		<h4>WHAT IS RANSOMWARE?</h4><p>Ransomware is a type of malware that infects a computer and restricts a user’s access to the infected computer. This type of malware, which has now been observed for several years, attempts to extort money from victims by displaying an on-screen alert. These alerts often state that their computer has been locked or that all of their files have been encrypted, and demand that a ransom is paid to restore access. This ransom is typically in the range of $100–$300 dollars, and is sometimes demanded in virtual currency, such as Bitcoin.</p><p>Ransomware is typically spread through phishing emails that contain malicious attachments and drive-by downloading. Drive-by downloading occurs when a user unknowingly visits an infected website and malware is downloaded and installed without their knowledge. Crypto ransomware, a variant that encrypts files, is typically spread through similar methods, and has been spread through Web-based instant messaging applications.</p><h4>WHY IS IT SO EFFECTIVE?</h4><p>The authors of ransomware instill fear and panic into their victims, causing them to click on a link or pay a ransom, and inevitably become infected with additional malware, including messages similar to those below:</p><ul><li>“Your computer has been infected with a virus. Click here to resolve the issue.”</li><li>“Your computer was used to visit websites with illegal content. To unlock your computer, you must pay a $100 fine.”</li><li>“All files on your computer have been encrypted. You must pay this ransom within 72 hours to regain access to your data.”</li></ul><h4>PROLIFERATION OF VARIANTS</h4><p>In 2012, Symantec, using data from a command and control (C2) server of 5,700 computers compromised in one day, estimated that approximately 2.9 percent of those compromised users paid the ransom. With an average ransom of $200, this meant malicious actors profited $33,600 per day, or $394,400 per month, from a single C2 server. These rough estimates demonstrate how profitable ransomware can be for malicious actors.</p><p>This financial success has likely led to a proliferation of ransomware variants. In 2013, more destructive and lucrative ransomware variants were introduced including Xorist, CryptorBit, and <a href="https://www.us-cert.gov/ncas/alerts/TA13-309A">CryptoLocker</a>. Some variants encrypt not just the files on the infected device but also the contents of shared or networked drives. These variants are considered destructive because they encrypt user’s and organization’s files, and render them useless until criminals receive a ransom.</p><p>Additional variants observed in 2014 included CryptoDefense and Cryptowall, which are also considered destructive. Reports indicate that CryptoDefense and Cryptowall share the same code, and that only the name of malware itself is different. Similar to CryptoLocker, these variants also encrypt files on the local computer, shared network files, and removable media.</p><h4>LINKS TO OTHER TYPES OF MALWARE</h4><p>Systems infected with ransomware are also often infected with other malware. In the case of CryptoLocker, a user typically becomes infected by opening a malicious attachment from an email. This malicious attachment contains Upatre, a downloader, which infects the user with <a href="https://www.us-cert.gov/ncas/alerts/TA14-150A">GameOver Zeus</a>. GameOver Zeus is a variant of the Zeus Trojan that steals banking information and is also used to steal other types of data. Once a system is infected with GameOver Zeus, Upatre will also download CryptoLocker. Finally, CryptoLocker encrypts files on the infected system, and requests that a ransom be paid.</p><p>The close ties between ransomware and other types of malware were demonstrated through the recent botnet disruption operation against GameOver Zeus, which also proved effective against CryptoLocker. In June 2014, an international law enforcement operation successfully weakened the infrastructure of both GameOver Zeus and CryptoLocker.</p>		
+		<h3>Impact</h3>
+		<p>Ransomware doesn’t only target home users; businesses can also become infected with ransomware, which can have negative consequences, including:</p><ul><li>Temporary or permanent loss of sensitive or proprietary information;</li><li>Disruption to regular operations;</li><li>Financial losses incurred to restore systems and files; and</li><li>Potential harm to an organization’s reputation.</li></ul><p>Paying the ransom does not guarantee the encrypted files will be released; it only guarantees that the malicious actors receive the victim’s money, and in some cases, their banking information. In addition, decrypting files does not mean the malware infection itself has been removed.</p>		
+		<h3>Solution</h3>
+		<p>Infections can be devastating to an individual or organization, and recovery can be a difficult process that may require the services of a reputable data recovery specialist.</p><p>US-CERT and CCIRC recommend users and administrators take the following preventive measures to protect their computer networks from ransomware infection:</p><ul><li>Perform regular backups of all critical information to limit the impact of data or system loss and to help expedite the recovery process. Ideally, this data should be kept on a separate device, and backups should be stored offline.</li><li>Maintain up-to-date anti-virus software.</li><li>Keep your operating system and software up-to-date with the latest patches.</li><li>Do not follow unsolicited web links in email. Refer to the <a href="https://www.us-cert.gov/ncas/tips/st04-014">Security Tip Avoiding Social Engineering and Phishing Attacks</a> for more information on social engineering attacks.</li><li>Use caution when opening email attachments. For information on safely handling email attachments, see <a href="https://www.us-cert.gov/sites/default/files/publications/emailscams_0905.pdf">Recognizing and Avoiding Email Scams</a>.</li><li>Follow safe practices when browsing the web. See <a href="https://www.us-cert.gov/ncas/tips/ST04-003">Good Security Habits</a> and <a href="https://www.us-cert.gov/ncas/tips/ST06-008">Safeguarding Your Data</a> for additional details.</li></ul><p>Individuals or organizations are not encouraged to pay the ransom, as this does not guarantee files will be released. Report instances of fraud to the FBI at the <a href="http://www.ic3.gov/">Internet Crime Complaint Center</a> or contact the <a href="mailto:cyber-incident@ps-sp.gc.ca">CCIRC</a> .</p>		
+		<h3>References</h3>
+		<ul>
+					<li><a href="http://www.kaspersky.com/about/news/virus/2014/Kaspersky-Lab-detects-mobile-Trojan-Svpeng-Financial-malware-with-ransomware-capabilities-now-targeting-US-users">Kaspersky Lab, Kaspersky Lab detects mobile Trojan Svpeng: Financial malware with ransomware capabilities now targeting U.S. </a></li>
+					<li><a href="http://nakedsecurity.sophos.com/2014/06/18/whats-next-for-ransomware-cryptowall-picks-up-where-cryptolocker-left-off/">Sophos / Naked Security, What’s next for ransomware? CryptoWall picks up where CryptoLocker left off</a></li>
+					<li><a href="http://www.symantec.com/connect/blogs/cryptodefense-cryptolocker-imitator-makes-over-34000-one-month">Symantec, CryptoDefence, the CryptoLocker Imitator, Makes Over $34,000 in One Month</a></li>
+					<li><a href="http://www.symantec.com/connect/blogs/cryptolocker-thriving-menace">Symantec, Cryptolocker: A Thriving Menace</a></li>
+					<li><a href="http://www.symantec.com/connect/blogs/cryptolocker-qa-menace-year">Symantec, Cryptolocker Q&amp;A: Menace of the Year</a></li>
+					<li><a href="http://www.symantec.com/connect/blogs/international-takedown-wounds-gameover-zeus-cybercrime-network">Symantec, International Takedown Wounds Gameover Zeus Cybercrime Network</a></li>
+				</ul>
+		
+		<h3>Revision History</h3>
+		<ul>
+					<li>October 22, 2014: Initial Release</li>
+						<li>October 24, 2014: Minor edit to the reference section</li>
+					</ul>
+		<hr />
+		<p>This product is provided subject to this <a href="http://www.us-cert.gov/privacy/notification">Notification</a> and this <a href="http://www.us-cert.gov/privacy/">Privacy &amp; Use</a> policy.</p>		<br />
+	]]>
+	</description>
+	 <pubDate>Wed, 22 Oct 2014 21:28:18 +0000</pubDate>
+ <dc:creator>US-CERT</dc:creator>
+ <guid isPermaLink="false">5972 at https://www.us-cert.gov</guid>
+</item>
+<item>
+	<title>TA14-290A: SSL 3.0 Protocol Vulnerability and POODLE Attack</title>
+	<link>https://www.us-cert.gov/ncas/alerts/TA14-290A</link>
+	<description><![CDATA[
+
+		Original release date: October 17, 2014 | Last revised: October 20, 2014<br />
+		<h3>Systems Affected</h3>
+		<p>All systems and applications utilizing the Secure Socket Layer (SSL) 3.0 with cipher-block chaining (CBC) mode ciphers may be vulnerable. However, the POODLE (Padding Oracle On Downgraded Legacy Encryption) attack demonstrates this vulnerability using web browsers and web servers, which is one of the most likely exploitation scenarios.</p>		
+		<h3>Overview</h3>
+		<p>US-CERT is aware of a design vulnerability found in the way SSL 3.0 handles block cipher mode padding. The POODLE attack demonstrates how an attacker can exploit this vulnerability to decrypt and extract information from inside an encrypted transaction.</p>		
+		<h3>Description</h3>
+		<p>The SSL 3.0 vulnerability stems from the way blocks of data are encrypted under a specific type of encryption algorithm within the SSL protocol. The POODLE attack takes advantage of the protocol version negotiation feature built into SSL/TLS to force the use of SSL 3.0 and then leverages this new vulnerability to decrypt select content within the SSL session. The decryption is done byte by byte and will generate a large number of connections between the client and server.</p><p>While SSL 3.0 is an old encryption standard and has generally been replaced by Transport Layer Security (TLS) (which is not vulnerable in this way), most SSL/TLS implementations remain backwards compatible with SSL 3.0 to interoperate with legacy systems in the interest of a smooth user experience. Even if a client and server both support a version of TLS the SSL/TLS protocol suite allows for protocol version negotiation (being referred to as the “downgrade dance” in other reporting). The POODLE attack leverages the fact that when a secure connection attempt fails, servers will fall back to older protocols such as SSL 3.0. An attacker who can trigger a connection failure can then force the use of SSL 3.0 and attempt the new attack. [<a href="https://www.openssl.org/~bodo/ssl-poodle.pdf">1</a>]</p><p>Two other conditions must be met to successfully execute the POODLE attack: 1) the attacker must be able to control portions of the client side of the SSL connection (varying the length of the input) and 2) the attacker must have visibility of the resulting ciphertext. The most common way to achieve these conditions would be to act as Man-in-the-Middle (MITM), requiring a whole separate form of attack to establish that level of access.</p><p>These conditions make successful exploitation somewhat difficult. Environments that are already at above-average risk for MITM attacks (such as public WiFi) remove some of those challenges.</p>		
+		<h3>Impact</h3>
+		<p>The POODLE attack can be used against any system or application that supports SSL 3.0 with CBC mode ciphers. This affects most current browsers and websites, but also includes any software that either references a vulnerable SSL/TLS library (e.g. OpenSSL) or implements the SSL/TLS protocol suite itself. By exploiting this vulnerability in a likely web-based scenario, an attacker can gain access to sensitive data passed within the encrypted web session, such as passwords, cookies and other authentication tokens that can then be used to gain more complete access to a website (impersonating that user, accessing database content, etc.).</p>		
+		<h3>Solution</h3>
+		<p>There is currently no fix for the vulnerability SSL 3.0 itself, as the issue is fundamental to the protocol; however, disabling SSL 3.0 support in system/application configurations is the most viable solution currently available.</p><p>Some of the same researchers that discovered the vulnerability also developed a fix for one of the prerequisite conditions; TLS_FALLBACK_SCSV is a protocol extension that prevents MITM attackers from being able to force a protocol downgrade. OpenSSL has added support for TLS_FALLBACK_SCSV to their latest versions and recommend the following upgrades: [<a href="https://www.openssl.org/news/secadv_20141015.txt">2</a>]</p><ul><li>OpenSSL 1.0.1 users should upgrade to 1.0.1j.</li><li>OpenSSL 1.0.0 users should upgrade to 1.0.0o.</li><li>OpenSSL 0.9.8 users should upgrade to 0.9.8zc.</li></ul><p>Both clients and servers need to support TLS_FALLBACK_SCSV to prevent downgrade attacks.</p><p>Other SSL 3.0 implementations are most likely also affected by POODLE. Contact your vendor for details. Additional vendor information may be available in the National Vulnerability Database (NVD) entry for CVE-2014-3566 [<a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3566">3</a>] or in CERT Vulnerability Note VU#577193. [<a href="http://www.kb.cert.org/vuls/id/577193">4</a>]</p>		
+		<h3>References</h3>
+		<ul>
+					<li><a href="https://www.openssl.org/~bodo/ssl-poodle.pdf"> [1] This Poodle Bites: Exploiting The SSL Fallback </a></li>
+					<li><a href="https://www.openssl.org/news/secadv_20141015.txt"> [2] OpenSSL Security Advisory [15 Oct 2014]</a></li>
+					<li><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-3566">[3] Vulnerability Summary for CVE-2014-3566 </a></li>
+					<li><a href="http://www.kb.cert.org/vuls/id/577193">[4] CERT Vulnerability Note VU#577193</a></li>
+				</ul>
+		
+		<h3>Revision History</h3>
+		<ul>
+					<li>October 17, 2014 Initial Release</li>
+						<li>October 20, 2014 Added CERT Vulnerability Note VU#577193 to the Solution section</li>
+					</ul>
+		<hr />
+		<p>This product is provided subject to this <a href="http://www.us-cert.gov/privacy/notification">Notification</a> and this <a href="http://www.us-cert.gov/privacy/">Privacy &amp; Use</a> policy.</p>		<br />
+	]]>
+	</description>
+	 <pubDate>Fri, 17 Oct 2014 16:27:32 +0000</pubDate>
+ <dc:creator>US-CERT</dc:creator>
+ <guid isPermaLink="false">5966 at https://www.us-cert.gov</guid>
+</item>
+<item>
+	<title>TA14-268A: GNU Bourne-Again Shell (Bash) ‘Shellshock’ Vulnerability (CVE-2014-6271, CVE-2014-7169, CVE-2014-7186, CVE-2014-7187, CVE-2014-6277 and CVE 2014-6278) </title>
+	<link>https://www.us-cert.gov/ncas/alerts/TA14-268A</link>
+	<description><![CDATA[
+
+		Original release date: September 25, 2014 | Last revised: September 30, 2014<br />
+		<h3>Systems Affected</h3>
+		<ul><li>GNU Bash through 4.3.</li><li>Linux and Mac OS X systems, on which Bash is part of the base operating system.</li><li>Any BSD or UNIX system on which GNU Bash has been installed as an add-on.</li><li>Any UNIX-like operating system on which the /bin/sh interface is implemented as GNU Bash.</li></ul>		
+		<h3>Overview</h3>
+		<p>A critical vulnerability has been reported in the GNU Bourne-Again Shell (Bash), the common command-line shell used in many Linux/UNIX operating systems and Apple’s Mac OS X. The flaw could allow an attacker to remotely execute shell commands by attaching malicious code in environment variables used by the operating system <a href="http://arstechnica.com/security/2014/09/bug-in-bash-shell-creates-big-security-hole-on-anything-with-nix-in-it/">[1]</a>. The United States Department of Homeland Security (DHS) is releasing this Technical Alert to provide further information about the GNU Bash vulnerability.</p>		
+		<h3>Description</h3>
+		<p>GNU Bash versions 1.14 through 4.3 contain a flaw that processes commands placed after function definitions in the added environment variable, allowing remote attackers to execute arbitrary code via a crafted environment which enables network-based exploitation. [<a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6271">2</a>, <a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7169">3</a>]</p><p>Critical instances where the vulnerability may be exposed include: [<a href="https://access.redhat.com/security/cve/CVE-2014-6271">4</a>, <a href="http://securityblog.redhat.com/2014/09/24/bash-specially-crafted-environment-variables-code-injection-attack/">5</a>]</p><ul><li>Apache HTTP Server using mod_cgi or mod_cgid scripts either written in bash, or spawn GNU Bash subshells, or on any system where the /bin/sh interface is implemented using GNU Bash.</li><li>Override or Bypass ForceCommand feature in OpenSSH sshd and limited protection for some Git and Subversion deployments used to restrict shells and allows arbitrary command execution capabilities. This data path is vulnerable on systems where the /bin/sh interface is implemented using GNU Bash.</li><li>Allow arbitrary commands to run on a DHCP client machine.</li></ul>		
+		<h3>Impact</h3>
+		<p>This vulnerability is classified by industry standards as “High” impact with CVSS Impact Subscore 10 and “Low” on complexity, which means it takes little skill to perform. This flaw allows attackers who can provide specially crafted environment variables containing arbitrary commands to execute on vulnerable systems. It is especially dangerous because of the prevalent use of the Bash shell and its ability to be called by an application in numerous ways.</p>		
+		<h3>Solution</h3>
+		<p>Initial solutions for Shellshock do not completely resolve the vulnerability. It is advised to install existing patches and pay attention for updated patches to address CVE-2014-6271, CVE-2014-7169, CVE-2014-7186, CVE-2014-7187, CVE-2014-6277, and CVE-2014-6278. Red Hat has provided a <a href="https://access.redhat.com/articles/1200223">support article</a> <a href="http://access.redhat.com/articles/1200223">[6]</a> with updated information.</p><p>Many UNIX-like operating systems, including Linux distributions and Apple Mac OS X include Bash and are likely to be affected. Contact your vendor for updated information. A list of vendors can be found in CERT Vulnerability Note <a href="http://www.kb.cert.org/vuls/id/252743">VU#252743</a> <a href="http://www.kb.cert.org/vuls/id/252743">[7]</a>.</p><p>US-CERT recommends system administrators review the vendor patches and the NIST Vulnerability Summaries for <a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6271">CVE-2014-6271</a>, <a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7169">CVE-2014-7169</a>, <a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7186">CVE-2014-7186</a>, <a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7187">CVE-2014-7187</a>, <a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6277">CVE-2014-6277</a> and <a href="https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6278">CVE-2014-6278</a> to mitigate damage caused by the exploit.</p>		
+		<h3>References</h3>
+		<ul>
+					<li><a href="http://arstechnica.com/security/2014/09/bug-in-bash-shell-creates-big-security-hole-on-anything-with-nix-in-it/">Ars Technica, Bug in Bash shell creates big security hole on anything with *nix in it; </a></li>
+					<li><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6271">DHS NCSD; Vulnerability Summary for CVE-2014-6271</a></li>
+					<li><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-7169">DHS NCSD; Vulnerability Summary for CVE-2014-7169</a></li>
+					<li><a href="https://access.redhat.com/security/cve/CVE-2014-6271">Red Hat, CVE-2014-6271 </a></li>
+					<li><a href="https://securityblog.redhat.com/2014/09/24/bash-specially-crafted-environment-variables-code-injection-attack/">Red Hat, Bash specially-crafted environment variables code injection attack</a></li>
+					<li><a href="https://access.redhat.com/articles/1200223">Red Hat, Bash Code Injection Vulnerability via Specially Crafted Environment Variables</a></li>
+					<li><a href="http://www.kb.cert.org/vuls/id/252743">CERT Vulnerability Note VU#252743</a></li>
+				</ul>
+		
+		<h3>Revision History</h3>
+		<ul>
+					<li>September 25, 2014 - Initial Release</li>
+						<li>September 26, 2014 - Minor Revisions</li>
+						<li>September 30, 2014 - Update to include additional CVE information</li>
+					</ul>
+		<hr />
+		<p>This product is provided subject to this <a href="http://www.us-cert.gov/privacy/notification">Notification</a> and this <a href="http://www.us-cert.gov/privacy/">Privacy &amp; Use</a> policy.</p>		<br />
+	]]>
+	</description>
+	 <pubDate>Thu, 25 Sep 2014 16:56:15 +0000</pubDate>
+ <dc:creator>US-CERT</dc:creator>
+ <guid isPermaLink="false">5947 at https://www.us-cert.gov</guid>
+</item>  </channel>
+</rss>

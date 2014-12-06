@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+  <!-- I2R 9899 -->
+  
+    
+    <title>Cisco Security Advisory</title>
+    
+  
+   
+   
+    
+    
+    
+    <link>http://tools.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml</link>
+    
+    <description>
+    	
+    </description>
+    <language>en-us</language>
+    <copyright>
+         1992-2010 Cisco Systems, Inc. All rights reserved.
+    </copyright>
+    <category>Security Advisories</category> 
+    <generator>
+    	Cisco Systems, Inc.
+    </generator>
+    <atom:link href="http://tools.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml" rel="self" type="application/rss+xml"/>
+    <ttl>15</ttl>
+
+    
+    
+	  <item>
+	  <!-- I2R 9899 -->
+          <title>GNU Bash Environment Variable Command Injection Vulnerability</title>
+          
+           
+            
+             
+			
+		            
+		 
+          <link>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140926-bash?vs_f=Cisco%20Security%20Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_p=GNU%20Bash%20Environment%20Variable%20Command%20Injection%20Vulnerability&amp;vs_k=1</link>
+          
+          <description>
+          
+         &lt;img src="http://www.cisco.com/swa/j/zag2_vs_log1.asc?Log=1&amp;vs_f=Cisco Security Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_k=1&amp;vs_p=GNU Bash Environment Variable Command Injection Vulnerability" border='0' height='0' width='0'&gt;&lt;/img&gt;&lt;p class="line874" style="text-align: left;"&gt;On September 24, 2014, a vulnerability in the Bash shell was publicly announced. The vulnerability is related to the way in which shell functions are passed though environment variables. The vulnerability may allow an attacker to inject commands into a Bash shell, depending on how the shell is invoked. The Bash shell may be invoked by a number of processes including, but not limited to, telnet, SSH, DHCP, and scripts hosted on web servers.&lt;/p&gt;
+All versions of GNU Bash starting with version 1.14 are affected by this vulnerability and the specific impact is determined by the characteristics of the process using the Bash shell. In the worst case, an unauthenticated remote attacker would be able to execute commands on an affected server. However, in most cases involving Cisco products, authentication is required before exploitation could be attempted.&lt;br /&gt;
+&lt;br /&gt;
+A number of Cisco products ship with or use an affected version of the Bash shell. The Bash shell is a third-party software component that is part of the GNU software project and used by a number of software vendors. As of this version of the Security Advisory, there have been a number of vulnerabilities recently discovered in the Bash shell, and the investigation is ongoing. For vulnerable products, Cisco has included information on the product versions that will contain the fixed software, and the date these versions are expected to be published on the &lt;a href="http://www.cisco.com/cisco/web/support/index.html#~shp_download"&gt;cisco.com download page&lt;/a&gt;&lt;a&gt;. This advisory will be updated as additional information becomes available. Cisco may release free software updates that address this vulnerability if a product is determined to be affected by this vulnerability. This advisory is available at the following link:&lt;br /&gt;
+&lt;/a&gt;&lt;a href="http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140926-bash"&gt;http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140926-bash&lt;/a&gt;</description>
+          <pubDate>Fri, 05 Dec 2014 21:48:26 PST</pubDate>
+          <guid>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140926-bash</guid>
+      </item>
+    
+	
+    
+	  <item>
+	  <!-- I2R 9899 -->
+          <title>Multiple Vulnerabilities in OpenSSL Affecting Cisco Products</title>
+          
+           
+            
+             
+			
+		            
+		 
+          <link>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140605-openssl?vs_f=Cisco%20Security%20Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_p=Multiple%20Vulnerabilities%20in%20OpenSSL%20Affecting%20Cisco%20Products&amp;vs_k=1</link>
+          
+          <description>
+          
+         &lt;img src="http://www.cisco.com/swa/j/zag2_vs_log1.asc?Log=1&amp;vs_f=Cisco Security Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_k=1&amp;vs_p=Multiple Vulnerabilities in OpenSSL Affecting Cisco Products" border='0' height='0' width='0'&gt;&lt;/img&gt;Multiple Cisco products incorporate a version of the OpenSSL package affected by one or more vulnerabilities that could allow an unauthenticated, remote attacker to execute arbitrary code, create a denial of service (DoS) condition, or perform a man-in-the-middle attack. On June 5, 2014, the OpenSSL Project released a security advisory detailing seven distinct vulnerabilities. The vulnerabilities are referenced in this document as follows:&lt;br /&gt;
+&lt;ul&gt;
+    &lt;li&gt;SSL/TLS Man-in-the-Middle Vulnerability&lt;/li&gt;
+    &lt;li&gt;DTLS Recursion Flaw Vulnerability&lt;/li&gt;
+    &lt;li&gt;DTLS Invalid Fragment Vulnerability&lt;/li&gt;
+    &lt;li&gt;SSL_MODE_RELEASE_BUFFERS NULL Pointer Dereference Vulnerability&lt;/li&gt;
+    &lt;li&gt;SSL_MODE_RELEASE_BUFFERS Session Injection or Denial of Service Vulnerability&lt;/li&gt;
+    &lt;li&gt;Anonymous ECDH Denial of Service Vulnerability&lt;/li&gt;
+    &lt;li&gt;ECDSA NONCE Side-Channel Recovery Attack Vulnerability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Please note that the devices that are affected by this vulnerability are the devices acting as a Secure Sockets Layer (SSL) or Datagram Transport Layer Security (DTLS) server terminating SSL or DTLS connections or devices acting as an SSL client initiating an SSL or DTLS connection. Devices that are simply traversed by SSL or DTLS traffic without terminating it are not affected.&lt;br /&gt;
+&lt;br /&gt;
+This advisory will be updated as additional information becomes available.&lt;br /&gt;
+&lt;br /&gt;
+Cisco will release free software updates that address these vulnerabilities. &lt;br /&gt;
+&lt;br /&gt;
+Workarounds that mitigate these vulnerabilities may be available.&lt;br /&gt;
+&lt;br /&gt;
+This advisory is available at the following link:&lt;br /&gt;
+&lt;a href="http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140605-openssl"&gt;http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140605-openssl&lt;/a&gt;&lt;/p&gt;</description>
+          <pubDate>Wed, 26 Nov 2014 19:45:21 PST</pubDate>
+          <guid>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140605-openssl</guid>
+      </item>
+    
+	
+    
+	  <item>
+	  <!-- I2R 9899 -->
+          <title>SSL Padding Oracle On Downgraded Legacy Encryption (POODLE) Vulnerability</title>
+          
+           
+            
+             
+			
+		            
+		 
+          <link>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141015-poodle?vs_f=Cisco%20Security%20Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_p=SSL%20Padding%20Oracle%20On%20Downgraded%20Legacy%20Encryption%20(POODLE)%20Vulnerability&amp;vs_k=1</link>
+          
+          <description>
+          
+         &lt;img src="http://www.cisco.com/swa/j/zag2_vs_log1.asc?Log=1&amp;vs_f=Cisco Security Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_k=1&amp;vs_p=SSL Padding Oracle On Downgraded Legacy Encryption (POODLE) Vulnerability" border='0' height='0' width='0'&gt;&lt;/img&gt;On October 14, 2014, a vulnerability was publicly announced in the Secure Sockets Layer version 3 (SSLv3) protocol when using a block cipher in Cipher Block Chaining (CBC) mode. SSLv3 is a cryptographic protocol designed to provide communication security, which has been superseded by Transport Layer Security (TLS) protocols. By exploiting this vulnerability, an attacker could decrypt a subset of the encrypted communication.&lt;br /&gt;
+&lt;br /&gt;
+This advisory is available at the following link:&lt;br /&gt;
+&lt;a href="http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141015-poodle"&gt;http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141015-poodle&lt;/a&gt;</description>
+          <pubDate>Fri, 21 Nov 2014 15:21:50 PST</pubDate>
+          <guid>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141015-poodle</guid>
+      </item>
+    
+	
+    
+	  <item>
+	  <!-- I2R 9899 -->
+          <title>Apache HTTPd Range Header Denial of Service Vulnerability</title>
+          
+           
+            
+             
+			
+		            
+		 
+          <link>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110830-apache?vs_f=Cisco%20Security%20Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_p=Apache%20HTTPd%20Range%20Header%20Denial%20of%20Service%20Vulnerability&amp;vs_k=1</link>
+          
+          <description>
+          
+         &lt;img src="http://www.cisco.com/swa/j/zag2_vs_log1.asc?Log=1&amp;vs_f=Cisco Security Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_k=1&amp;vs_p=Apache HTTPd Range Header Denial of Service Vulnerability" border='0' height='0' width='0'&gt;&lt;/img&gt;&lt;p&gt;The Apache HTTPd server contains a denial of service vulnerability when
+it handles multiple, overlapping ranges. Multiple Cisco products may be
+affected by this vulnerability. &lt;/p&gt;
+&lt;p&gt; Mitigations that can be deployed on Cisco devices within
+the network are available in the Cisco Applied Intelligence companion document
+for this Advisory:
+&lt;a href="http://tools.cisco.com/security/center/viewAMBAlert.x?alertId=24024"&gt;http://tools.cisco.com/security/center/viewAMBAlert.x?alertId=24024&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;This advisory is posted at &lt;a href="http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110830-apache"&gt;http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110830-apache&lt;/a&gt;.&lt;/p&gt;</description>
+          <pubDate>Thu, 20 Nov 2014 16:35:36 PST</pubDate>
+          <guid>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20110830-apache</guid>
+      </item>
+    
+	
+    
+	  <item>
+	  <!-- I2R 9899 -->
+          <title>Multiple Vulnerabilities in Cisco Small Business RV Series Routers</title>
+          
+           
+            
+             
+			
+		            
+		 
+          <link>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141105-rv?vs_f=Cisco%20Security%20Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_p=Multiple%20Vulnerabilities%20in%20Cisco%20Small%20Business%20RV%20Series%20Routers&amp;vs_k=1</link>
+          
+          <description>
+          
+         &lt;img src="http://www.cisco.com/swa/j/zag2_vs_log1.asc?Log=1&amp;vs_f=Cisco Security Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_k=1&amp;vs_p=Multiple Vulnerabilities in Cisco Small Business RV Series Routers" border='0' height='0' width='0'&gt;&lt;/img&gt;The Cisco RV120W Wireless-N VPN Firewall, Cisco RV180 VPN Router, Cisco RV180W Wireless-N Multifunction VPN Router, and Cisco RV220W Wireless Network Security Firewall are affected by the following vulnerabilities:&lt;br /&gt;
+&lt;ul&gt;
+    &lt;li&gt;Cisco RV Series Routers Command Injection Vulnerability&lt;/li&gt;
+    &lt;li&gt;Cisco RV Series Routers HTTP Referer Header Vulnerability&lt;/li&gt;
+    &lt;li&gt;Cisco RV Series Routers Insecure File Upload Vulnerability&lt;/li&gt;
+&lt;/ul&gt;
+These vulnerabilities are independent of each other; a release that is affected by one of the vulnerabilities may not be affected by the others.&lt;br /&gt;
+&lt;br /&gt;
+Cisco has released free software updates that address these vulnerabilities. Workarounds that mitigate these vulnerabilities are available. This advisory is available at the following link:&lt;br /&gt;
+&lt;a href="http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141105-rv"&gt;http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141105-rv&lt;/a&gt;</description>
+          <pubDate>Thu, 20 Nov 2014 14:41:29 PST</pubDate>
+          <guid>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141105-rv</guid>
+      </item>
+    
+	
+    
+	  <item>
+	  <!-- I2R 9899 -->
+          <title>Cisco IronPort Appliances Telnet Remote Code Execution Vulnerability</title>
+          
+           
+            
+             
+			
+		            
+		 
+          <link>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120126-ironport?vs_f=Cisco%20Security%20Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_p=Cisco%20IronPort%20Appliances%20Telnet%20Remote%20Code%20Execution%20Vulnerability&amp;vs_k=1</link>
+          
+          <description>
+          
+         &lt;img src="http://www.cisco.com/swa/j/zag2_vs_log1.asc?Log=1&amp;vs_f=Cisco Security Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_k=1&amp;vs_p=Cisco IronPort Appliances Telnet Remote Code Execution Vulnerability" border='0' height='0' width='0'&gt;&lt;/img&gt;&lt;span id="ctl00_MainBodyContainer_DgFields_ctl03_lblField"&gt;Cisco AsyncOS Software&lt;/span&gt; for Cisco &lt;span id="ctl00_MainBodyContainer_DgFields_ctl03_lblField"&gt;Web Security Appliance (WSA)&lt;/span&gt;, Cisco Email Security Appliance (ESA), and Cisco Content Security Management Appliance (SMA) contain a vulnerability that may allow a remote, unauthenticated attacker to execute arbitrary code with elevated privileges. &lt;br /&gt;
+&lt;br /&gt;
+Cisco has released free software updates that address this vulnerability. Workarounds that mitigate this vulnerability are available. &lt;br /&gt;
+&lt;br /&gt;
+&lt;strong&gt;Note:&lt;/strong&gt; This security advisory has been updated to include important information about Cisco WSA&lt;br /&gt;
+&lt;br /&gt;
+This advisory is available at the following link:&lt;br /&gt;
+&lt;a href="http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120126-ironport"&gt;http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120126-ironport&lt;/a&gt;</description>
+          <pubDate>Wed, 12 Nov 2014 16:06:18 PST</pubDate>
+          <guid>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20120126-ironport</guid>
+      </item>
+    
+	
+    
+	  <item>
+	  <!-- I2R 9899 -->
+          <title>Cisco Unified IP Phone Local Kernel System Call Input Validation Vulnerability</title>
+          
+           
+            
+             
+			
+		            
+		 
+          <link>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130109-uipphone?vs_f=Cisco%20Security%20Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_p=Cisco%20Unified%20IP%20Phone%20Local%20Kernel%20System%20Call%20Input%20Validation%20Vulnerability&amp;vs_k=1</link>
+          
+          <description>
+          
+         &lt;img src="http://www.cisco.com/swa/j/zag2_vs_log1.asc?Log=1&amp;vs_f=Cisco Security Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_k=1&amp;vs_p=Cisco Unified IP Phone Local Kernel System Call Input Validation Vulnerability" border='0' height='0' width='0'&gt;&lt;/img&gt;Cisco Unified IP Phones 7900 Series versions 9.3(1)SR1 and prior contain an arbitrary code execution vulnerability that could allow a local attacker to execute code or modify arbitrary memory with elevated privileges.&lt;br /&gt;
+&lt;br /&gt;
+This vulnerability is due to a failure to properly validate input passed to kernel system calls from applications running in userspace. An attacker could exploit this issue by gaining local access to the device using physical access or authenticated access using SSH and executing an attacker-controlled binary that is designed to exploit the issue. Such an attack would originate from an unprivileged context.&lt;br /&gt;
+&lt;br /&gt;
+Ang Cui initially reported the issue to the Cisco Product Security Incident Response Team (PSIRT). On November 6, 2012, the Cisco PSIRT disclosed this issue in Cisco bug ID &lt;a href="https://tools.cisco.com/bugsearch/bug/CSCuc83860"&gt;CSCuc83860&lt;/a&gt; (&lt;a href="http://tools.cisco.com/RPF/register/register.do"&gt;registered&lt;/a&gt; customers only) Release Note Enclosure. Subsequently, Mr. Cui has spoken at several public conferences and has performed public demonstrations of a device being compromised and used as a listening device. &lt;br /&gt;
+&lt;br /&gt;
+Mitigations are available to help reduce the attack surface of affected devices. See the "Details" section of this security advisory and the accompanying Cisco Applied Mitigation Bulletin (AMB) for additional information. &lt;br /&gt;
+&lt;br /&gt;
+&lt;strong&gt;Update (November 3rd, 2014):&lt;/strong&gt;&lt;br /&gt;
+Updated software that resolves the vulnerability described in this document has been released. &amp;nbsp;This release is generally available and can be downloaded from the product-specific support areas on Cisco.com. The release version is 9.4(2).&lt;br /&gt;
+&lt;br /&gt;
+This advisory is available at the following link:&lt;br /&gt;
+&lt;a href="http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130109-uipphone"&gt;http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130109-uipphone&lt;/a&gt;</description>
+          <pubDate>Mon, 03 Nov 2014 21:48:48 PST</pubDate>
+          <guid>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20130109-uipphone</guid>
+      </item>
+    
+	
+    
+	  <item>
+	  <!-- I2R 9899 -->
+          <title>OpenSSL Heartbeat Extension Vulnerability in Multiple Cisco Products</title>
+          
+           
+            
+             
+			
+		            
+		 
+          <link>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140409-heartbleed?vs_f=Cisco%20Security%20Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_p=OpenSSL%20Heartbeat%20Extension%20Vulnerability%20in%20Multiple%20Cisco%20Products&amp;vs_k=1</link>
+          
+          <description>
+          
+         &lt;img src="http://www.cisco.com/swa/j/zag2_vs_log1.asc?Log=1&amp;vs_f=Cisco Security Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_k=1&amp;vs_p=OpenSSL Heartbeat Extension Vulnerability in Multiple Cisco Products" border='0' height='0' width='0'&gt;&lt;/img&gt;Multiple Cisco products incorporate a version of the OpenSSL package affected by a vulnerability that could allow an unauthenticated, remote attacker to retrieve memory in chunks of 64 kilobytes from a connected client or server.&lt;br /&gt;
+&lt;br /&gt;
+The vulnerability is due to a missing bounds check in the handling of the Transport Layer Security (TLS) heartbeat extension. An attacker could exploit this vulnerability by implementing a malicious TLS or Datagram Transport Layer Security (DTLS) client, if trying to exploit the vulnerability on an affected server, or a malicious TLS or DTLS server, if trying to exploit the vulnerability on an affected client. An exploit could send a specially crafted TLS or DTLS heartbeat packet to the connected client or server. An exploit could allow the attacker to disclose a limited portion of memory from a connected client or server for every heartbeat packet sent. The disclosed portions of memory could contain sensitive information that may include private keys and passwords.&lt;br /&gt;
+&lt;br /&gt;
+Please note that the devices that are affected by this vulnerability are the devices acting as an SSL server terminating SSL connections or devices acting as an SSL Client initiating an SSL connection. Devices that are simply traversed by SSL traffic without terminating it are not affected.&lt;br /&gt;
+&lt;br /&gt;
+This advisory will be updated as additional information becomes available. Cisco will release free software updates that address these vulnerabilities. Workarounds that mitigate these vulnerabilities may be available.
+This advisory is available at the following link:&lt;br /&gt;
+&lt;a href="http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140409-heartbleed"&gt;http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140409-heartbleed&lt;/a&gt;</description>
+          <pubDate>Wed, 29 Oct 2014 16:11:45 PDT</pubDate>
+          <guid>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140409-heartbleed</guid>
+      </item>
+    
+	
+    
+	  <item>
+	  <!-- I2R 9899 -->
+          <title>Multiple Vulnerabilities in Cisco ASA Software</title>
+          
+           
+            
+             
+			
+		            
+		 
+          <link>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141008-asa?vs_f=Cisco%20Security%20Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_p=Multiple%20Vulnerabilities%20in%20Cisco%20ASA%20Software&amp;vs_k=1</link>
+          
+          <description>
+          
+         &lt;img src="http://www.cisco.com/swa/j/zag2_vs_log1.asc?Log=1&amp;vs_f=Cisco Security Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_k=1&amp;vs_p=Multiple Vulnerabilities in Cisco ASA Software" border='0' height='0' width='0'&gt;&lt;/img&gt;Cisco Adaptive Security Appliance (ASA) Software is affected by the following vulnerabilities:
+&lt;ul&gt;
+    &lt;li&gt;Cisco ASA SQL*NET Inspection Engine Denial of Service Vulnerability&lt;/li&gt;
+    &lt;li&gt;Cisco ASA VPN Denial of Service Vulnerability&lt;/li&gt;
+    &lt;li&gt;Cisco ASA IKEv2 Denial of Service Vulnerability &lt;/li&gt;
+    &lt;li&gt;Cisco ASA Health and Performance Monitor Denial of Service Vulnerability&lt;/li&gt;
+    &lt;li&gt;Cisco ASA GPRS Tunneling Protocol Inspection Engine Denial of Service Vulnerability&lt;/li&gt;
+    &lt;li&gt;Cisco ASA SunRPC Inspection Engine Denial of Service Vulnerability&lt;/li&gt;
+    &lt;li&gt;Cisco ASA DNS Inspection Engine Denial of Service Vulnerability&lt;/li&gt;
+    &lt;li&gt;Cisco ASA VPN Failover Command Injection Vulnerability&lt;/li&gt;
+    &lt;li&gt;Cisco ASA VNMC Command Input Validation Vulnerability&lt;/li&gt;
+    &lt;li&gt;Cisco ASA Local Path Inclusion Vulnerability &lt;/li&gt;
+    &lt;li&gt;Cisco ASA Clientless SSL VPN Information Disclosure and Denial of Service Vulnerability &lt;/li&gt;
+    &lt;li&gt;Cisco ASA Clientless SSL VPN Portal Customization Integrity Vulnerability&lt;/li&gt;
+    &lt;li&gt;Cisco ASA Smart Call Home Digital Certificate Validation Vulnerability &lt;/li&gt;
+&lt;/ul&gt;
+These vulnerabilities are independent of one another; a release that is affected by one of the vulnerabilities may not be affected by the others.&lt;br /&gt;
+&lt;br /&gt;
+Successful exploitation of the Cisco ASA SQL*NET Inspection Engine Denial of Service Vulnerability, Cisco ASA VPN Denial of Service Vulnerability, Cisco ASA IKEv2 Denial of Service Vulnerability, Cisco ASA Health and Performance Monitor Denial of Service Vulnerability, Cisco ASA GPRS Tunneling Protocol Inspection Engine Denial of Service Vulnerability, Cisco ASA SunRPC Inspection Engine Denial of Service Vulnerability, and Cisco ASA DNS Inspection Engine Denial of Service Vulnerability may result in a reload of an affected device, leading to a denial of service (DoS) condition.&lt;br /&gt;
+&lt;br /&gt;
+Successful exploitation of the Cisco ASA VPN Failover Command Injection Vulnerability, Cisco ASA VNMC Command Input Validation Vulnerability, and Cisco ASA Local Path Inclusion Vulnerability may result in full compromise of the affected system.&lt;br /&gt;
+&lt;br /&gt;
+Successful exploitation of the Cisco ASA Clientless SSL VPN Information Disclosure and Denial of Service Vulnerability may result in the disclosure of internal information or, in some cases, a reload of the affected system.&lt;br /&gt;
+&lt;br /&gt;
+Successful exploitation of the Cisco ASA Clientless SSL VPN Portal Customization Integrity Vulnerability may result in a compromise of the Clientless SSL VPN portal, which may lead to several types of attacks, which are not limited to cross-site scripting (XSS), stealing of credentials, or redirects of users to malicious web pages.&lt;br /&gt;
+&lt;br /&gt;
+Successful exploitation of the Cisco ASA Smart Call Home Digital Certificate Validation Vulnerability may result in a digital certificate validation bypass, which could allow the attacker to bypass digital certificate authentication and gain access inside the network via remote access VPN or management access to the affected system via the Cisco Adaptive Security Device Management (ASDM).&lt;br /&gt;
+&lt;br /&gt;
+Cisco has released free software updates that address these vulnerabilities. Workarounds that mitigate some of these vulnerabilities are available.&lt;br /&gt;
+&lt;br /&gt;
+This advisory is available at the following link:&lt;br /&gt;
+&lt;a href="http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141008-asa"&gt;http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141008-asa&lt;/a&gt;</description>
+          <pubDate>Fri, 24 Oct 2014 15:44:11 PDT</pubDate>
+          <guid>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141008-asa</guid>
+      </item>
+    
+	
+    
+	  <item>
+	  <!-- I2R 9899 -->
+          <title>TCP Vulnerabilities in Multiple Non-IOS Cisco Products</title>
+          
+           
+            
+             
+			
+		            
+		 
+          <link>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20040420-tcp-nonios?vs_f=Cisco%20Security%20Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_p=TCP%20Vulnerabilities%20in%20Multiple%20Non-IOS%20Cisco%20Products&amp;vs_k=1</link>
+          
+          <description>
+          
+         &lt;img src="http://www.cisco.com/swa/j/zag2_vs_log1.asc?Log=1&amp;vs_f=Cisco Security Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_k=1&amp;vs_p=TCP Vulnerabilities in Multiple Non-IOS Cisco Products" border='0' height='0' width='0'&gt;&lt;/img&gt;&lt;p&gt; A vulnerability in the Transmission Control Protocol (TCP)
+specification (RFC793) has been discovered by an external researcher. The
+successful exploitation enables an adversary to reset any established TCP
+connection in a much shorter time than was previously discussed publicly.
+Depending on the application, the connection may get automatically
+re-established. In other cases, a user will have to repeat the action (for
+example, open a new Telnet or SSH session). Depending upon the attacked
+protocol, a successful attack may have additional consequences beyond
+terminated connection which must be considered. This attack vector is only
+applicable to the sessions which are terminating on a device (such as a router,
+switch, or computer), and not to the sessions that are only passing through the
+device (for example, transit traffic that is being routed by a router). In
+addition, the attack vector does not directly compromise data integrity or
+confidentiality. &lt;/p&gt;
+&lt;p&gt; All Cisco products which contain a TCP stack are susceptible to this
+vulnerability. &lt;/p&gt;
+&lt;p&gt; This advisory is available at
+&lt;a href="http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20040420-tcp-nonios"&gt;
+http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20040420-tcp-nonios&lt;/a&gt;,
+and it describes this vulnerability as it applies to Cisco products that do not
+run Cisco IOS&amp;reg; software. &lt;/p&gt;
+&lt;p&gt; A companion advisory that describes this vulnerability for products
+that run Cisco IOS software is available at
+&lt;a href="http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20040420-tcp-ios"&gt;http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20040420-tcp-ios&lt;/a&gt;.
+&lt;/p&gt;</description>
+          <pubDate>Thu, 23 Oct 2014 12:53:51 PDT</pubDate>
+          <guid>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20040420-tcp-nonios</guid>
+      </item>
+    
+	
+    
+	  <item>
+	  <!-- I2R 9899 -->
+          <title>Cisco TelePresence MCU Software Memory Exhaustion Vulnerability</title>
+          
+           
+            
+             
+			
+		            
+		 
+          <link>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141015-mcu?vs_f=Cisco%20Security%20Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_p=Cisco%20TelePresence%20MCU%20Software%20Memory%20Exhaustion%20Vulnerability&amp;vs_k=1</link>
+          
+          <description>
+          
+         &lt;img src="http://www.cisco.com/swa/j/zag2_vs_log1.asc?Log=1&amp;vs_f=Cisco Security Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_k=1&amp;vs_p=Cisco TelePresence MCU Software Memory Exhaustion Vulnerability" border='0' height='0' width='0'&gt;&lt;/img&gt;A vulnerability in the network stack  of Cisco TelePresence MCU Software
+could allow an unauthenticated, remote attacker to cause the exhaustion
+of available memory which could lead to system instability and a
+reload of the affected system.&lt;br /&gt;
+&lt;br /&gt;
+Cisco has released free software updates that address this vulnerability. Workarounds that mitigate this vulnerability are not available.
+This advisory is available at the following link:&lt;br /&gt;
+&lt;a href="http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141015-mcu"&gt;http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141015-mcu&lt;/a&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;strong&gt;Note:&lt;/strong&gt;&amp;nbsp;This security advisory does not provide information about
+the GNU Bash Environment Variable Command Injection Vulnerability (also known as &lt;em&gt;Shellshock&lt;/em&gt;).
+For additional information regarding Cisco products affected by this
+vulnerability, refer to the Cisco Security Advisory at the following
+link: &lt;a href="http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140926-bash"&gt;http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140926-bash&lt;/a&gt;</description>
+          <pubDate>Wed, 15 Oct 2014 16:00:00 PDT</pubDate>
+          <guid>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141015-mcu</guid>
+      </item>
+    
+	
+    
+	  <item>
+	  <!-- I2R 9899 -->
+          <title>Multiple Vulnerabilities in Cisco TelePresence Video Communication Server and Cisco Expressway Software</title>
+          
+           
+            
+             
+			
+		            
+		 
+          <link>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141015-vcs?vs_f=Cisco%20Security%20Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_p=Multiple%20Vulnerabilities%20in%20Cisco%20TelePresence%20Video%20Communication%20Server%20and%20Cisco%20Expressway%20Software&amp;vs_k=1</link>
+          
+          <description>
+          
+         &lt;img src="http://www.cisco.com/swa/j/zag2_vs_log1.asc?Log=1&amp;vs_f=Cisco Security Advisory&amp;vs_cat=Security%20Intelligence&amp;vs_type=RSS&amp;vs_k=1&amp;vs_p=Multiple Vulnerabilities in Cisco TelePresence Video Communication Server and Cisco Expressway Software" border='0' height='0' width='0'&gt;&lt;/img&gt;Cisco TelePresence Video Communication Server (VCS) and Cisco Expressway Software includes the following vulnerabilities:&lt;br /&gt;
+&lt;ul&gt;
+    &lt;li&gt;Cisco TelePresence VCS and Cisco Expressway Crafted Packets Denial of Service Vulnerability&lt;/li&gt;
+    &lt;li&gt;Cisco TelePresence VCS and Cisco Expressway SIP IX Filter Denial of Service Vulnerability&lt;/li&gt;
+    &lt;li&gt;Cisco TelePresence VCS and Cisco Expressway SIP Denial of Service Vulnerability &lt;/li&gt;
+&lt;/ul&gt;
+Succesfull exploitation of any of these vulnerabilities could allow an unauthenticated, remote attacker to cause a reload of the affected system, which may result in a Denial of Service (DoS) condition.&lt;br /&gt;
+&lt;br /&gt;
+Cisco has released free software updates that address these vulnerabilities. Workarounds that mitigate these vulnerabilities are not available. This advisory is available at the following link:&lt;br /&gt;
+&lt;a href="http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141015-vcs"&gt;http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141015-vcs&lt;/a&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;strong&gt;Note:&lt;/strong&gt;&amp;nbsp;This security advisory does not provide information about
+the GNU Bash Environment Variable Command Injection Vulnerability (also known as &lt;em&gt;Shellshock&lt;/em&gt;).
+For additional information regarding Cisco products affected by this
+vulnerability, refer to the Cisco Security Advisory at the following
+link: &lt;a href="http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140926-bash"&gt;http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20140926-bash&lt;/a&gt;</description>
+          <pubDate>Wed, 15 Oct 2014 16:00:00 PDT</pubDate>
+          <guid>http://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20141015-vcs</guid>
+      </item>
+    
+	
+  </channel>
+</rss>
