@@ -41,18 +41,19 @@ require 'open-uri'
 
 # XML Feed Symbols
 alertfeeds = {
-	cert: 'https://www.us-cert.gov/ncas/alerts.xml',
-	nvd: 'https://nvd.nist.gov/download/nvd-rss.xml',
-	sans: 'https://isc.sans.edu/rssfeed.xml'
+	alert_cert: 'https://www.us-cert.gov/ncas/alerts.xml',
+	alert_nvd: 'https://nvd.nist.gov/download/nvd-rss.xml',
+	alert_sans: 'https://isc.sans.edu/rssfeed.xml'
 	# add more feeds
 }
 
 vendorfeeds = {
-	cisco: 'http://tools.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml'
+	vendor_cisco: 'http://tools.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml'
 }
 
 newsfeeds = {
-	threatpost: 'http://threatpost.com/feed'
+	news_sans: 'https://isc.sans.edu/newssummaryrss.xml',
+	news_threatpost: 'http://threatpost.com/feed'
 }
 
 ####################
