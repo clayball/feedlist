@@ -24,26 +24,29 @@ class Feed
   end
 end
 
-feed = Feed.new('cert', 'alert', 'http://www.us-cert.gov/ncas/alerts.xml')
-feed.get_feed
-
 # XML feed hashes based on type, e.g., vulnerability alerts, infosec news, etc
-alertfeeds = {
-	alert_cert: 'https://www.us-cert.gov/ncas/alerts.xml',
-	alert_nvd: 'https://nvd.nist.gov/download/nvd-rss.xml',
-	alert_sans: 'https://isc.sans.edu/rssfeed.xml'
+
+
+alert = {
+	cert: 'https://www.us-cert.gov/ncas/alerts.xml',
+	nvd: 'https://nvd.nist.gov/download/nvd-rss.xml',
+	sans: 'https://isc.sans.edu/rssfeed.xml'
 }
 
-vendorfeeds = {
-	vendor_cisco: 'http://tools.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml'
+vendor = {
+	cisco: 'http://tools.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml'
+  aws: 'http://aws.amazon.com/rss/security.rss'
+  ibm: 'http://www.iss.net/rss.php'
 }
 
-newsfeeds = {
-	news_sans: 'https://isc.sans.edu/newssummaryrss.xml',
-	news_threatpost: 'http://threatpost.com/feed'
+news = {
+	sans: 'https://isc.sans.edu/newssummaryrss.xml',
+	threatpost: 'http://threatpost.com/feed'
 }
 
-blogfeeds = {
-	blog_moxie: 'http://www.thoughtcrime.org/blog/rss.xml',
-	blog_krebs: 'http://krebsonsecurity.com/feed/'
+blog = {
+	moxie: 'http://www.thoughtcrime.org/blog/rss.xml',
+	krebs: 'http://krebsonsecurity.com/feed/'
 }
+
+
