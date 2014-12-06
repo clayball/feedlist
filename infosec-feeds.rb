@@ -33,6 +33,13 @@
 require 'nokogiri'
 require 'open-uri'
 
+# create xml/feed_categories
+feed_categories = %w[alert vendor news blog]
+Dir.mkdir('xml') unless Dir.exists?('xml')
+feed_categories.each do |f|
+    Dir.mkdir('xml/'+f) unless Dir.exists?('xml'+f)
+end
+
 ####################
 # XML feed hashes based on type, e.g., vulnerability alerts, infosec news, etc
 alertfeeds = {
