@@ -39,7 +39,7 @@ require 'open-uri'
 # 
 ####################
 
-# XML Feed Symbols
+# XML feed hashes based 
 alertfeeds = {
 	alert_cert: 'https://www.us-cert.gov/ncas/alerts.xml',
 	alert_nvd: 'https://nvd.nist.gov/download/nvd-rss.xml',
@@ -56,19 +56,24 @@ newsfeeds = {
 	news_threatpost: 'http://threatpost.com/feed'
 }
 
+blogfeeds = {
+	blog_moxie: 'http://www.thoughtcrime.org/blog/rss.xml',
+	blog_krebs: 'http://krebsonsecurity.com/feed/'
+}
+
 ####################
 # Functions        #
 ####################
-def get_feeds(feeds)
-	print "[+] Fetching feeds.. \n"
+def get_feeds(feeds,type)
+	print "[+] Fetching #{type} feeds.. \n"
 	# Loop through xmlfeeds and fetch each RSS XML file.. we can play with these file locally later.
 	feeds.each_pair do |key, value|
 		#fout.print "Start: #{Time.now}\n"
-		xmlout = File.new("xml/#{key}.xml", "w")
+		xmlout = File.new("xml/#{type}/#{key}.xml", "w")
 		print "[+] Fetching #{key} at #{value}\n"
 		doc = Nokogiri::XML(open("#{value}"))
 		xmlout.print doc
-		print "[+] ..#{key} file saved to xml/#{key}.xml\n"
+		print "[+] ..#{key} file saved to xml/#{type}/#{key}.xml\n"
 	end
 	print "[+] Fetch complete\n"
 	return "success"
@@ -79,14 +84,17 @@ end
 ####################
 # Main             #
 ####################
-get_feeds_result = get_feeds(alertfeeds)
-print "[info] get_feeds_result: #{get_feeds_result}\n"
+get_feeds_result = get_feeds(alertfeeds, 'alert')
+print "[info] alert feeds result: #{get_feeds_result}\n"
 
-get_feeds_result = get_feeds(vendorfeeds)
-print "[info] get_feeds_result: #{get_feeds_result}\n"
+get_feeds_result = get_feeds(vendorfeeds, 'vendor')
+print "[info] vendor feeds result: #{get_feeds_result}\n"
 
-get_feeds_result = get_feeds(newsfeeds)
-print "[info] get_feeds_result: #{get_feeds_result}\n"
+get_feeds_result = get_feeds(newsfeeds, 'news')
+print "[info] news feeds result: #{get_feeds_result}\n"
+
+get_feeds_result = get_feeds(blogfeeds, 'blog')
+print "[info] blog feeds result: #{get_feeds_result}\n"
 
 # Use nokogiri to open and parse the XML files we downloaded.
 #f = File.open(".xml")
