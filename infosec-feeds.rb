@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 require 'nokogiri'
-require 'open-uri'
+require 'yaml'
 
 class Feed
   attr_accessor :name, :type, :url, :file
@@ -22,25 +22,9 @@ class Feed
   end
 end
 
-# XML feed hashes based on type, e.g., vulnerability alerts, infosec news, etc
-alert = {
-  cert: 'https://www.us-cert.gov/ncas/alerts.xml',
-  nvd: 'https://nvd.nist.gov/download/nvd-rss.xml',
-  sans: 'https://isc.sans.edu/rssfeed.xml'
-}
-
-vendor = {
-  cisco: 'http://tools.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml',
-  aws: 'http://aws.amazon.com/rss/security.rss',
-  ibm: 'http://www.iss.net/rss.php'
-}
-
-news = {
-  sans: 'https://isc.sans.edu/newssummaryrss.xml',
-  threatpost: 'http://threatpost.com/feed'
-}
-
-blog = {
-  moxie: 'http://www.thoughtcrime.org/blog/rss.xml',
-  krebs: 'http://krebsonsecurity.com/feed/'
-}
+config = begin
+           YAML.load(File.open('feeds.yml'))
+         rescue ArgumentError => e
+           puts "Could not parse YAML: #{e.message}"
+         end
+puts config
