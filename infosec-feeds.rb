@@ -3,6 +3,9 @@
 # Fetch XML based RSS feeds from various information security websites.
 # - save the XML file for processing later.. possibly in various ways/functions
 #
+# The original idea was to fetch feeds specifically related to alerts and advisories related to software
+# vulnerabilities. It might be useful to include other classifications of sources, e.g., favorite blogs,
+# news, and (cough..cough) vendors. 
 #
 # The following sources are fetched
 # ---------------------------------
@@ -15,6 +18,11 @@
 #   using the Security Content Automation Protocol (SCAP). This data enables automation of vulnerability
 #   management, security measurement, and compliance. NVD includes databases of security checklists,
 #   security related software flaws, misconfigurations, product names, and impact metrics.
+# - Cisco Security Advisories
+#   PSIRT manages the receipt, investigation, and public reporting of security vulnerability information related
+#   to Cisco products and networks. Subscribe to the Cisco Security Advisory RSS Feed to receive information
+#   about significant security issues that directly involve Cisco products and require an upgrade, fix, or other
+#   customer action.
 # - TODO: add more sources
 #         More sources will allow us to collorelate data across sources and possibly make decisions based
 #         on patterns found across many sources. For example, an SSH vulnerability is blowing up everywhere..
@@ -26,46 +34,53 @@ require 'nokogiri'
 require 'open-uri'
 
 # XML Feed Symbols
-xmlfeeds = {
+alertfeeds = {
 	cert: 'https://www.us-cert.gov/ncas/alerts.xml',
-	nvd: 'https://nvd.nist.gov/download/nvd-rss.xml'
+	nvd: 'https://nvd.nist.gov/download/nvd-rss.xml',	
 	# add more feeds here
+}
+
+vendorfeeds = {
+	cisco: 'http://tools.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml'
+}
+
+newsfeeds = {
+	threatpost: 'http://threatpost.com/feed'
 }
 
 ####################
 # Functions        #
 ####################
-
-def get_feeds(xmlfeeds)
+def get_feeds(feeds)
 	print "[+] Fetching feeds.. \n"
 	# Loop through xmlfeeds and fetch each RSS XML file.. we can play with these file locally later.
-	xmlfeeds.each_pair do |key, value|
+	feeds.each_pair do |key, value|
 		#fout.print "Start: #{Time.now}\n"
 		xmlout = File.new("xml/#{key}.xml", "w")
 		print "[+] Fetching #{key} at #{value}\n"
 		doc = Nokogiri::HTML(open("#{value}"))
 		xmlout.print doc
-		print "[+] #{key} file saved to xml/#{key}.xml\n"
+		print "[+] ..#{key} file saved to xml/#{key}.xml\n"
 	end
 	print "[+] Fetch complete\n"
 	return "success"
 end
-
 # End Functions
 ####################
 
 ####################
 # Main             #
 ####################
+get_feeds_result = get_feeds(alertfeeds)
+print "[info] get_feeds_result: #{get_feeds_result}\n"
 
-get_feeds_result = get_feeds(xmlfeeds)
+get_feeds_result = get_feeds(vendorfeeds)
+print "[info] get_feeds_result: #{get_feeds_result}\n"
 
-print "[debug] get_feeds_result: #{get_feeds_result}\n"
+get_feeds_result = get_feeds(newsfeeds)
+print "[info] get_feeds_result: #{get_feeds_result}\n"
 
 # Use nokogiri to open and parse the XML files we downloaded.
 #f = File.open(".xml")
 #doc = Nokogiri::XML(f)
 #f.close
-
-# End Main
-####################
