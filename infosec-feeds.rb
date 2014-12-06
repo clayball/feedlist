@@ -33,11 +33,18 @@
 require 'nokogiri'
 require 'open-uri'
 
+####################
+# NOTES            #
+####################
+# 
+####################
+
 # XML Feed Symbols
 alertfeeds = {
 	cert: 'https://www.us-cert.gov/ncas/alerts.xml',
-	nvd: 'https://nvd.nist.gov/download/nvd-rss.xml',	
-	# add more feeds here
+	nvd: 'https://nvd.nist.gov/download/nvd-rss.xml',
+	sans: 'https://isc.sans.edu/rssfeed.xml'
+	# add more feeds
 }
 
 vendorfeeds = {
@@ -58,7 +65,7 @@ def get_feeds(feeds)
 		#fout.print "Start: #{Time.now}\n"
 		xmlout = File.new("xml/#{key}.xml", "w")
 		print "[+] Fetching #{key} at #{value}\n"
-		doc = Nokogiri::HTML(open("#{value}"))
+		doc = Nokogiri::XML(open("#{value}"))
 		xmlout.print doc
 		print "[+] ..#{key} file saved to xml/#{key}.xml\n"
 	end
