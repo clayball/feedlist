@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require 'nokogiri'
+require 'open-uri'
 require 'yaml'
 
 class Feed
@@ -14,17 +14,24 @@ class Feed
 
   def get_feed
     output_path = File.expand_path(File.dirname(__FILE__)) + '/xml/' + type + '/'
+    puts output_path
     output_file = File.new(output_path + @file, 'w')
     puts "[+] Fetching #{@name}\n    from: #{@url}"
-    output_file.print Nokogiri::XML(open(@url))
-    output_file.close
+    File.open(output_file, 'wb') do |file|
+      file.write open(url).read
+    end
     puts "[+] #{@name} saved to #{@file}"
   end
 end
 
-config = begin
+feeds = begin
            YAML.load(File.open('feeds.yml'))
          rescue ArgumentError => e
            puts "Could not parse YAML: #{e.message}"
          end
-puts config
+
+feeds.each do |value|
+  name, type, url = value[:name], value[:type], value[:url]
+  f = Feed.new(name, type, url)
+  f.get_feed
+end

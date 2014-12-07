@@ -1,11 +1,22 @@
 ---
-alert:
-  - cert: 'https://www.us-cert.gov/ncas/alerts.xml'
-  - nvd: 'https://nvd.nist.gov/download/nvd-rss.xml'
-  - ibm: 'http://www.iss.net/rss.php'
-news:
-  - sans: 'https://isc.sans.edu/rssfeed.xml'
-  - threatpost: 'http://threatpost.com/feed'
-blog:
-  - moxie: 'http://www.thoughtcrime.org/blog/rss.xml'
-  - krebs: 'http://krebsonsecurity.com/feed/'
+- :name: cert
+  :type: alert
+  :url: 'https://www.us-cert.gov/ncas/alerts.xml'
+- :name: nvd
+  :type: alert
+  :url: 'https://nvd.nist.gov/download/nvd-rss.xml'
+- :name: ibm
+  :type: alert
+  :url: 'http://www.iss.net/rss.php'
+- :name: sans
+  :type: news
+  :url: 'https://isc.sans.edu/rssfeed.xml'
+- :name: threatpost
+  :type: news
+  :url: 'http://threatpost.com/feed'
+- :name: moxie
+  :type: blog
+  :url: 'http://www.thoughtcrime.org/blog/rss.xml'
+- :name: krebs
+  :type: blog
+  :url: 'http://krebsonsecurity.com/feed/'
