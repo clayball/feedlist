@@ -8,12 +8,28 @@
 - :name: ibm
   :type: alert
   :url: 'http://www.iss.net/rss.php'
+
 - :name: sans
   :type: news
   :url: 'https://isc.sans.edu/rssfeed.xml'
 - :name: threatpost
   :type: news
   :url: 'http://threatpost.com/feed'
+
+
+- :name: cisco
+  :type: vendor
+  :url: 'http://tools.cisco.com/security/center/psirtrss20/CiscoSecurityAdvisory.xml'
+- :name: aws
+  :type: vendor
+  :url: 'https://alas.aws.amazon.com/alas.rss'
+- :name: ibm 
+  :type: vendor
+  :url: 'http://www.iss.net/rss.php'
+- :name: suse
+  :type: vendor
+  :url: 'http://www.novell.com/newsfeeds/rss/patches/security_notifications-daily.xml'
+
 - :name: moxie
   :type: blog
   :url: 'http://www.thoughtcrime.org/blog/rss.xml'

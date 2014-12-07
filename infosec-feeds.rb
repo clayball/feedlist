@@ -14,13 +14,12 @@ class Feed
 
   def get_feed
     output_path = File.expand_path(File.dirname(__FILE__)) + '/xml/' + type + '/'
-    puts output_path
     output_file = File.new(output_path + @file, 'w')
-    puts "[+] Fetching #{@name}\n    from: #{@url}"
+    puts "[+] Fetching #{@name} from: #{@url}"
     File.open(output_file, 'wb') do |file|
       file.write open(url).read
     end
-    puts "[+] #{@name} saved to #{@file}"
+    puts "[+] #{@name} saved to #{output_path + @file}"
   end
 end
 
@@ -31,7 +30,6 @@ feeds = begin
          end
 
 feeds.each do |value|
-  name, type, url = value[:name], value[:type], value[:url]
-  f = Feed.new(name, type, url)
+  f = Feed.new(value[:name], value[:type], value[:url])
   f.get_feed
 end
