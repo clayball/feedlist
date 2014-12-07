@@ -16,9 +16,12 @@ class Feed
     output_path = File.expand_path(File.dirname(__FILE__)) + '/xml/' + type + '/'
     output_file = File.new(output_path + @file, 'w')
     puts "[+] Fetching #{@name} from: #{@url}"
+    # being rescue block for getting?
     File.open(output_file, 'wb') do |file|
       file.write open(url).read
     end
+    # rescue?
+    # end
     puts "[+] #{@name} saved to #{output_path + @file}"
   end
 end
