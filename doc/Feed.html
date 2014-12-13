@@ -207,7 +207,7 @@
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File infosec-feeds.rb, line 19</span>
+            <pre><span class="ruby-comment"># File feed.rb, line 19</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">type</span>, <span class="ruby-identifier">url</span>)
   <span class="ruby-ivar">@name</span>, <span class="ruby-ivar">@type</span>, <span class="ruby-ivar">@url</span> = <span class="ruby-identifier">name</span>, <span class="ruby-identifier">type</span>, <span class="ruby-identifier">url</span>
   <span class="ruby-ivar">@file_name</span> = <span class="ruby-node">&quot;#{@type}_#{@name}.xml&quot;</span>
@@ -251,7 +251,7 @@
 
           
           <div class="method-source-code" id="download_feed-source">
-            <pre><span class="ruby-comment"># File infosec-feeds.rb, line 34</span>
+            <pre><span class="ruby-comment"># File feed.rb, line 34</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">download_feed</span>
   <span class="ruby-identifier">mkdirs</span>
   <span class="ruby-identifier">output_file</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@output_path</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@file_name</span>, <span class="ruby-string">&#39;w&#39;</span>)
@@ -293,7 +293,7 @@
 
           
           <div class="method-source-code" id="mkdirs-source">
-            <pre><span class="ruby-comment"># File infosec-feeds.rb, line 27</span>
+            <pre><span class="ruby-comment"># File feed.rb, line 27</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">mkdirs</span>
   <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">mkdir</span>(<span class="ruby-string">&#39;xml&#39;</span>) <span class="ruby-keyword">unless</span> <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">exist?</span>(<span class="ruby-string">&#39;xml&#39;</span>)
   <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">mkdir</span>(<span class="ruby-string">&#39;xml/&#39;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@type</span>) <span class="ruby-keyword">unless</span> <span class="ruby-constant">Dir</span>.<span class="ruby-identifier">exist?</span>(<span class="ruby-string">&#39;xml/&#39;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@type</span>)
