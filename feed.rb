@@ -53,6 +53,9 @@ class Feed
         puts "----------------------------------------"
         puts "Title: #{item.title}"
         puts "Date: #{item.date}"
+        puts "Link: #{item.link}"
+        puts "Description: "
+        puts "#{item.description}"
         puts "----------------------------------------"
       end
       puts "==============================================================================="
