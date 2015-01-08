@@ -46,6 +46,7 @@ class Feed
   end
 
   def fetch_feed
+    # These items will need to be added to the DB (if new)
     open(url) do |rss|
       feed = RSS::Parser.parse(rss)
       puts "Title: #{feed.channel.title}"
