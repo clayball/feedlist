@@ -45,17 +45,22 @@ class Feed
     self
   end
 
+  # A method that fetches the feeds listed in feed_sources.yml
+  # TODO:
+  # - IMPORTANT: sanitize feed/item results before inserting into db
+  # - Do we want or need the description data for each item for all feeds
+  #   or do we want to be selective and only grab description data from selected sources?
   def fetch_feed
     open(url) do |rss|
       feed = RSS::Parser.parse(rss)
-      puts "Title: #{feed.channel.title}"
+      puts "Feed: #{feed.channel.title} - #{name}"
       feed.items.each do |item|
         puts "----------------------------------------"
         puts "Title: #{item.title}"
         puts "Date: #{item.date}"
         puts "Link: #{item.link}"
-        puts "Description: "
-        puts "#{item.description}"
+        puts "Description: " if name == 'krebs'
+        puts "#{item.description}" if name == 'krebs'
         puts "----------------------------------------"
       end
       puts "==============================================================================="
