@@ -50,7 +50,10 @@ class Feed
       feed = RSS::Parser.parse(rss)
       puts "Title: #{feed.channel.title}"
       feed.items.each do |item|
-        puts "Item: #{item.title}"
+        puts "----------------------------------------"
+        puts "Title: #{item.title}"
+        puts "Date: #{item.date}"
+        puts "----------------------------------------"
       end
       puts "==============================================================================="
     end
