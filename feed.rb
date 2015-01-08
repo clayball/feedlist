@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 require 'open-uri'
 require 'yaml'
+require 'rss'
 
 # A class for retrieving xml files for Rss feeds
 class Feed
@@ -43,4 +44,16 @@ class Feed
     end
     self
   end
+
+  def fetch_feed
+    open(url) do |rss|
+      feed = RSS::Parser.parse(rss)
+      puts "Title: #{feed.channel.title}"
+      feed.items.each do |item|
+        puts "Item: #{item.title}"
+      end
+      puts "==============================================================================="
+    end
+  end
+
 end
