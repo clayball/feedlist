@@ -63,6 +63,8 @@ class Feed
           f.puts "<!DOCTYPE html>"
           f.puts "<html><head><meta charset=\"utf-8\">"
           f.puts "<title>InfoSec Feeds - #{feed.channel.title}</title>"
+          f.puts "</head>"
+          f.puts "<body>"
           puts "[+] Fetching feed: #{feed.channel.title}"
           feed.items.each do |item|
             f.puts "<hr>"
@@ -74,6 +76,7 @@ class Feed
             f.puts "<hr>"
           end
           puts "[+] Fetch complete"
+          f.puts "</body>"
           f.puts "</html>"
           #f.puts "Complete"
         rescue StandardError
