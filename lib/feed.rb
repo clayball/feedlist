@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+
 require 'open-uri'
 require 'yaml'
 require 'rss'
@@ -51,25 +52,30 @@ class Feed
   # - Do we want or need the description data for each item for all feeds
   #   or do we want to be selective and only grab description data from selected sources?
   def fetch_feed
+    # encoding: ascii
     # These items will need to be added to the DB (if new)
-    File.open("logs/fetch-#{name}.log", "w") do |f|
+    # Writing to a log (htm) file that we can open in a browser (tread carefully here)
+    File.open("logs/fetch-#{name}.htm", "w") do |f|
       open(url) do |rss|
         begin
           feed = RSS::Parser.parse(rss)
           # write to log file and stdout
-          f.puts "[+] Fetching feed: #{feed.channel.title}"
+          f.puts "<!DOCTYPE html>"
+          f.puts "<html><head><meta charset=\"utf-8\">"
+          f.puts "<title>InfoSec Feeds - #{feed.channel.title}</title>"
           puts "[+] Fetching feed: #{feed.channel.title}"
           feed.items.each do |item|
-            f.puts "----------------------------------------"
-            f.puts "Title: #{item.title}"
-            f.puts "Date: #{item.date}"
-            f.puts "Link: #{item.link}"
-            f.puts "Description: " if name == 'krebs'
-            f.puts "#{item.description}" if name == 'krebs'
-            f.puts "----------------------------------------"
+            f.puts "<hr>"
+            f.puts "<b>Title:</b> #{item.title}<br>"
+            f.puts "<b>Date:</b> #{item.date}<br>"
+            f.puts "<b>Link:</b> <a href='#{item.link}'>#{item.link}</a><br>"
+            f.puts "<b>Description:</b><br>" if name == 'krebs'
+            f.puts "<p>#{item.description}</p>" if name == 'krebs'
+            f.puts "<hr>"
           end
           puts "[+] Fetch complete"
-          f.puts "==============================================================================="
+          f.puts "</html>"
+          #f.puts "Complete"
         rescue StandardError
           STDERR.puts "Failed to fetch #{@url}:\n #{$ERROR_INFO}"
         end
