@@ -45,6 +45,11 @@ class Feed
     self
   end
 
+  # A method that fetches the feeds listed in feed_sources.yml
+  # TODO:
+  # - IMPORTANT: sanitize feed/item results before inserting into db
+  # - Do we want or need the description data for each item for all feeds
+  #   or do we want to be selective and only grab description data from selected sources?
   def fetch_feed
     # These items will need to be added to the DB (if new)
     open(url) do |rss|
