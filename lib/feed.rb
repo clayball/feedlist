@@ -52,22 +52,27 @@ class Feed
   #   or do we want to be selective and only grab description data from selected sources?
   def fetch_feed
     # These items will need to be added to the DB (if new)
-    open(url) do |rss|
-      begin
-        feed = RSS::Parser.parse(rss)
-        puts "Title: #{feed.channel.title}"
-        feed.items.each do |item|
-          puts "----------------------------------------"
-          puts "Title: #{item.title}"
-          puts "Date: #{item.date}"
-          puts "Link: #{item.link}"
-          puts "Description: " if name == 'krebs'
-          puts "#{item.description}" if name == 'krebs'
-          puts "----------------------------------------"
+    File.open("logs/fetch-#{name}.log", "w") do |f|
+      open(url) do |rss|
+        begin
+          feed = RSS::Parser.parse(rss)
+          # write to log file and stdout
+          f.puts "[+] Fetching feed: #{feed.channel.title}"
+          puts "[+] Fetching feed: #{feed.channel.title}"
+          feed.items.each do |item|
+            f.puts "----------------------------------------"
+            f.puts "Title: #{item.title}"
+            f.puts "Date: #{item.date}"
+            f.puts "Link: #{item.link}"
+            f.puts "Description: " if name == 'krebs'
+            f.puts "#{item.description}" if name == 'krebs'
+            f.puts "----------------------------------------"
+          end
+          puts "[+] Fetch complete"
+          f.puts "==============================================================================="
+        rescue StandardError
+          STDERR.puts "Failed to fetch #{@url}:\n #{$ERROR_INFO}"
         end
-        puts "==============================================================================="
-      rescue StandardError
-        STDERR.puts "Failed to fetch #{@url}:\n #{$ERROR_INFO}"
       end
     end
   end
