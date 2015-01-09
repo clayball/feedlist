@@ -61,8 +61,8 @@ class Feed
           puts "Title: #{item.title}"
           puts "Date: #{item.date}"
           puts "Link: #{item.link}"
-          puts "Description: "
-          puts "#{item.description}"
+          puts "Description: " if name == 'krebs'
+          puts "#{item.description}" if name == 'krebs'
           puts "----------------------------------------"
         end
         puts "==============================================================================="
