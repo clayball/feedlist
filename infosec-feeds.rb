@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require_relative 'feed'
+require_relative 'lib/feed'
 
 feed_sources = begin
           YAML.load(File.open('feed_sources.yml'))
