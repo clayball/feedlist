@@ -8,9 +8,20 @@ vulnerabilities. It might be useful to include other classifications of sources,
 news, and (cough..cough) vendors. 
 
 
+Running
+-------
+
+At some point we may package this as a gem. Until then..
+
+from the main infosec-feeds/ directory
+
+  bin/infosec-feeds
+
 
 The following sources are fetched
 ---------------------------------
+
+FIX: the descriptions below have been trimmed somehow.
 
 - US-CERT is part of DHS' National Cybersecurity and Communications Integration Center (N
   The Department of Homeland Security's United States Computer Emergency Readiness Team (

@@ -1,8 +1,9 @@
 #!/usr/bin/env ruby
-require_relative 'lib/feed'
+
+require_relative '../lib/feed'
 
 feed_sources = begin
-          YAML.load(File.open('feed_sources.yml'))
+          YAML.load(File.open('config/feed_sources.yml'))
         rescue ArgumentError => e
           puts "Could not parse YAML: #{e.message}"
         end
