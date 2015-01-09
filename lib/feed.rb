@@ -56,8 +56,8 @@ class Feed
     # These items will need to be added to the DB (if new)
     # Writing to a log (htm) file that we can open in a browser (tread carefully here)
     File.open("logs/fetch-#{name}.htm", "w") do |f|
-      open(url) do |rss|
-        begin
+      begin
+        open(url) do |rss|
           feed = RSS::Parser.parse(rss)
           # write to log file and stdout
           f.puts "<!DOCTYPE html>"
@@ -71,17 +71,17 @@ class Feed
             f.puts "<b>Title:</b> #{item.title}<br>"
             f.puts "<b>Date:</b> #{item.date}<br>"
             f.puts "<b>Link:</b> <a href='#{item.link}'>#{item.link}</a><br>"
-            f.puts "<b>Description:</b><br>" if name == 'krebs'
-            f.puts "<p>#{item.description}</p>" if name == 'krebs'
+            f.puts "<b>Description:</b><br>" #if name == 'krebs'
+            f.puts "<p>#{item.description}</p>" #if name == 'krebs'
             f.puts "<hr>"
           end
           puts "[+] Fetch complete"
           f.puts "</body>"
           f.puts "</html>"
           #f.puts "Complete"
-        rescue StandardError
-          STDERR.puts "Failed to fetch #{@url}:\n #{$ERROR_INFO}"
         end
+      rescue StandardError
+        STDERR.puts "Failed to fetch #{@url}:\n #{$ERROR_INFO}"
       end
     end
   end
