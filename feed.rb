@@ -48,18 +48,22 @@ class Feed
   def fetch_feed
     # These items will need to be added to the DB (if new)
     open(url) do |rss|
-      feed = RSS::Parser.parse(rss)
-      puts "Title: #{feed.channel.title}"
-      feed.items.each do |item|
-        puts "----------------------------------------"
-        puts "Title: #{item.title}"
-        puts "Date: #{item.date}"
-        puts "Link: #{item.link}"
-        puts "Description: "
-        puts "#{item.description}"
-        puts "----------------------------------------"
+      begin
+        feed = RSS::Parser.parse(rss)
+        puts "Title: #{feed.channel.title}"
+        feed.items.each do |item|
+          puts "----------------------------------------"
+          puts "Title: #{item.title}"
+          puts "Date: #{item.date}"
+          puts "Link: #{item.link}"
+          puts "Description: "
+          puts "#{item.description}"
+          puts "----------------------------------------"
+        end
+        puts "==============================================================================="
+      rescue StandardError
+        STDERR.puts "Failed to fetch #{@url}:\n #{$ERROR_INFO}"
       end
-      puts "==============================================================================="
     end
   end
 
