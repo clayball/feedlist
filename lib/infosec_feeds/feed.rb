@@ -66,11 +66,12 @@ module Infosec_Feeds
             f.puts "<!DOCTYPE html>"
             f.puts "<html><head><meta charset=\"utf-8\">"
             f.puts "<title>InfoSec Feeds - #{feed.channel.title}</title>"
+            f.puts "<link rel='stylesheet' href='css/isfeeds.css'>"
             f.puts "</head>"
             f.puts "<body>"
+            f.puts "<h2>InfoSec Feeds - #{feed.channel.title}</h2>"
             puts "[+] Fetching feed: #{feed.channel.title}"
             feed.items.each do |item|
-              f.puts "<hr>"
               f.puts "<b>Title:</b> #{item.title}<br>"
               f.puts "<b>Date:</b> #{item.date}<br>"
               f.puts "<b>Link:</b> <a href='#{item.link}'>#{item.link}</a><br>"

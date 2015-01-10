@@ -7,7 +7,7 @@ feed_sources =
     puts "Could not parse YAML: #{e.message}"
   end
 
-File.open("logs/feedlist.htm", "w") do |f|
+File.open("htdocs/feedlist.htm", "w") do |f|
   f.puts "<!DOCTYPE html>"
   f.puts "<html>"
   f.puts "<head><title>InfoSec Feeds List</title></head>"
