@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require_relative '../lib/feed'
+require_relative '../lib/infosec_feeds/feed'
 
 feed_sources = begin
           YAML.load(File.open('config/feed_sources.yml'))
@@ -9,7 +9,7 @@ feed_sources = begin
         end
 
 feed_sources.each do |value|
-  f = Feed.new(value[:name], value[:type], value[:url])
+  f = Infosec_Feeds::Feed.new(value[:name], value[:type], value[:url])
   #f.download_feed
   f.fetch_feed
 end
