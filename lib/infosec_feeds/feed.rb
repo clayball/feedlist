@@ -58,7 +58,7 @@ module Infosec_Feeds
       # encoding: ascii
       # These items will need to be added to the DB (if new)
       # Writing to a log (htm) file that we can open in a browser (tread carefully here)
-      File.open("logs/#{name}.htm", "w") do |f|
+      File.open("htdocs/#{name}.htm", "w") do |f|
         begin
           open(url) do |rss|
             feed = RSS::Parser.parse(rss)
