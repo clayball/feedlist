@@ -4,7 +4,7 @@ require 'open-uri'
 require 'yaml'
 require 'rss'
 
-# Implement infosecfeeds namespace
+# Implement Infosec_Feeds namespace
 module Infosec_Feeds
 
   # A class for retrieving xml files for Rss feeds

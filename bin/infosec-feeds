@@ -1,15 +1,16 @@
 #!/usr/bin/env ruby
 
+# Ruby >= 1.9 is required
 require_relative '../lib/infosec_feeds/feed'
 
-feed_sources = begin
-          YAML.load(File.open('config/feed_sources.yml'))
-        rescue ArgumentError => e
-          puts "Could not parse YAML: #{e.message}"
-        end
+feed_sources = 
+	begin
+    YAML.load(File.open('config/feed_sources.yml'))
+  rescue ArgumentError => e
+    puts "Could not parse YAML: #{e.message}"
+  end
 
 feed_sources.each do |value|
   f = Infosec_Feeds::Feed.new(value[:name], value[:type], value[:url])
-  #f.download_feed
   f.fetch_feed
 end
