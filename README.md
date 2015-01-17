@@ -22,3 +22,8 @@ TODO: add details
 ### Run ###
 
   ruby bin/feedlist
+
+### View ###
+
+Open htdocs/feedlist.htm in your browser of choice.
+
