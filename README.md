@@ -9,7 +9,7 @@ news, and (cough..cough) vendors.
 
 ## Running ##
 
-### Configure ###
+### Configure RSS Feeds ###
 
 Edit config/feed_sources.yml
 
@@ -27,3 +27,8 @@ TODO: add details
 
 Open htdocs/feedlist.htm in your browser of choice.
 
+
+## Customizing ##
+
+Aside from adding the RSS feeds of your choice you can also customize the CSS for your
+feedlist.htm file and feed.htm files.
