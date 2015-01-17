@@ -27,14 +27,14 @@ task :createdb do
 end
 
 desc "Backup our database"
-task :baskupdb do
-	puts "[+] TODO Task: Backup our database"
+task :backupdb do
+	puts "[+] TODO Task: Backup database"
 end
 
 # This is more for my personal use for now. Not sure if this task will be permanent.
-desc "Create feed listing HTML"
-task :create_feedlist do
+desc "Generate the feed listing HTML file based on the config file."
+task :genlist do
 	puts "[+] TODO Task: Creating feed listing HTML file."
-	ruby 'tasks/create-feedlist.rb'
+	ruby 'tasks/genlist.rb'
 end
 

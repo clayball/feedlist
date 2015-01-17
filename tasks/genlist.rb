@@ -32,7 +32,7 @@ File.open("htdocs/feedlist.htm", "w") do |f|
   f.puts "<h2>InfoSec Feeds List</h2>"
   f.puts "<ul>"
 	feed_sources.each do |value|
-  	f.puts "<li><a href='#{value[:name]}.htm'>#{value[:name]}</a>"
+  	f.puts "<li>#{value[:type]} - <a href='#{value[:name]}.htm'>#{value[:name]}</a>"
  end # each
  f.puts "</ul>"
  f.puts "</body></html>"

@@ -15,7 +15,9 @@
 - :name: threatpost
   :type: news
   :url: 'http://threatpost.com/feed'
-
+- :name: eff
+  :type: news
+  :url: 'https://www.eff.org/rss/updates.xml'
 
 - :name: cisco
   :type: vendor
