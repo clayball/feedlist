@@ -1,5 +1,6 @@
+#!/usr/bin/env ruby
 ###############################################################################
-# This file is part of Infosec-Feeds
+# This file is part of feedlist
 #
 # Infosec-Feeds is free software: you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by the Free
@@ -13,37 +14,19 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with Infosec-Feeds.  If not, see <http://www.gnu.org/licenses/>.
-################################################################################
+###############################################################################
 
-# Class: feedsdb
-# Usage: require-relative 'lib/class-feedsdb.rb'
+# Ruby >= 1.9 is required
+require_relative '../lib/feedlist/feed'
 
-class FeedsDB
-	# class vars
-	attr_reader :host
-	attr_reader :port
-	attr_reader :database
-	attr_reader :user
-	attr_reader :pass
-	attr_reader :conn
+feed_sources = 
+	begin
+    YAML.load(File.open('config/feed_sources.yml'))
+  rescue ArgumentError => e
+    puts "Could not parse YAML: #{e.message}"
+  end
 
-	def initialize
-		# do stuff
-		@host = 'localhost'
-		@port = 5436
-		@database = 'isfeeds'
-		@user = 'user'
-		@pass = 'pass'
-		@conn
-	end
-
-	def connect
-		#conn = PGconn.connect("#{@host}", port, '', '', 'factsim', 'postgres', '')
-		puts "[test] Connection string: #{@host},#{@port}, '', '', '#{database}', '#{user}', '#{pass}'"
-	end
-
-	def close
-		conn.finish
-	end
-
+feed_sources.each do |value|
+  f = FeedList::Feed.new(value[:name], value[:type], value[:url])
+  f.fetch_feed
 end

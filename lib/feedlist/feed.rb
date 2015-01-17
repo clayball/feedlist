@@ -1,10 +1,10 @@
 #!/usr/bin/env ruby
 
 ###############################################################################
-# This file is part of Infosec-Feeds
+# This file is part of feedlist
 #
-# Infosec-Feeds is free software: you can redistribute it and/or modify it
-# under the terms of the GNU General Public License as published by the Free
+# FeedLists is free software: you can redistribute it and/or modify it under
+# the terms of the GNU General Public License as published by the Free
 # Software Foundation, either version 3 of the License, or (at your option)
 # any later version.
 #
@@ -14,17 +14,17 @@
 # more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with Infosec-Feeds.  If not, see <http://www.gnu.org/licenses/>.
+# along with feedlist.  If not, see <http://www.gnu.org/licenses/>.
 ###############################################################################
 
 require 'open-uri'
 require 'yaml'
 require 'rss'
 
-# Implement Infosec_Feeds namespace
-module Infosec_Feeds
+# Implement FeedList namespace
+module FeedList
 
-  # A class for retrieving xml files for Rss feeds
+  # feedlist main class
   class Feed
 
     # -name: name of feed
@@ -53,18 +53,18 @@ module Infosec_Feeds
     #end
 
     # A method that calls mkdirs, and downloads the xml file
-    def download_feed
-      mkdirs
-      output_file = File.new(@output_path + @file_name, 'w')
-      begin
-        File.open(output_file, 'wb') do |file|
-          file.write open(url).read
-        end
-      rescue StandardError
-        STDERR.puts "Failed to download #{@url}:\n #{$ERROR_INFO}"
-      end
-      self
-    end
+    #def download_feed
+    #  mkdirs
+    #   output_file = File.new(@output_path + @file_name, 'w')
+    #   begin
+    #     File.open(output_file, 'wb') do |file|
+    #       file.write open(url).read
+    #     end
+    #   rescue StandardError
+    #     STDERR.puts "Failed to download #{@url}:\n #{$ERROR_INFO}"
+    #   end
+    #   self
+    # end
 
     # A method that fetches the feeds listed in feed_sources.yml
     # TODO:
@@ -72,7 +72,6 @@ module Infosec_Feeds
     # - Do we want or need the description data for each item for all feeds
     #   or do we want to be selective and only grab description data from selected sources?
     def fetch_feed
-      # encoding: ascii
       # These items will need to be added to the DB (if new)
       # Writing to a log (htm) file that we can open in a browser (tread carefully here)
       File.open("htdocs/#{name}.htm", "w") do |f|
@@ -92,6 +91,7 @@ module Infosec_Feeds
               f.puts "<b>Title:</b> #{item.title}<br>"
               f.puts "<b>Date:</b> #{item.date}<br>"
               f.puts "<b>Link:</b> <a href='#{item.link}'>#{item.link}</a><br>"
+              # You may want to be selective when displaying the description content
               f.puts "<b>Description:</b><br>" #if name == 'krebs'
               f.puts "<p>#{item.description}</p>" #if name == 'krebs'
               f.puts "<hr>"
@@ -99,7 +99,6 @@ module Infosec_Feeds
             puts "[+] Fetch complete"
             f.puts "</body>"
             f.puts "</html>"
-            #f.puts "Complete"
           end
         rescue StandardError
           STDERR.puts "Failed to fetch #{@url}:\n #{$ERROR_INFO}"

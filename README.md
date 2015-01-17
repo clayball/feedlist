@@ -1,5 +1,5 @@
-infosec-feeds
-=============
+feedslist
+=========
 
 Fetch XML based RSS feeds from various information security websites.
 - save the XML file for processing later.. possibly in various ways/functions

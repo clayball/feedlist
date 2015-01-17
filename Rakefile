@@ -1,5 +1,5 @@
 ###############################################################################
-# This file is part of Infosec-Feeds
+# This file is part of feedlist
 #
 # Infosec-Feeds is free software: you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by the Free

@@ -1,5 +1,5 @@
 ###############################################################################
-# This file is part of Infosec-Feeds
+# This file is part of feedlist
 #
 # Infosec-Feeds is free software: you can redistribute it and/or modify it
 # under the terms of the GNU General Public License as published by the Free
@@ -27,9 +27,9 @@ feed_sources =
 File.open("htdocs/feedlist.htm", "w") do |f|
   f.puts "<!DOCTYPE html>"
   f.puts "<html>"
-  f.puts "<head><title>InfoSec Feeds List</title></head>"
+  f.puts "<head><title>FeedList</title></head>"
   f.puts "<body>"
-  f.puts "<h2>InfoSec Feeds List</h2>"
+  f.puts "<h2>Feed List</h2>"
   f.puts "<ul>"
 	feed_sources.each do |value|
   	f.puts "<li>#{value[:type]} - <a href='#{value[:name]}.htm'>#{value[:name]}</a>"
