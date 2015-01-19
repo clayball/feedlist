@@ -18,6 +18,9 @@
 - :name: eff
   :type: news
   :url: 'https://www.eff.org/rss/updates.xml'
+- :name: slashdot yro
+  :type: news
+  :url: 'http://rss.slashdot.org/Slashdot/slashdotYourRightsOnline'
 
 - :name: cisco
   :type: vendor
@@ -32,9 +35,7 @@
   :type: vendor
   :url: 'http://www.novell.com/newsfeeds/rss/patches/security_notifications-daily.xml'
 
-- :name: moxie
-  :type: blog
-  :url: 'http://www.thoughtcrime.org/blog/rss.xml'
 - :name: krebs
   :type: blog
   :url: 'http://krebsonsecurity.com/feed/'
+

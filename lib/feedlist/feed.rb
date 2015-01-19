@@ -81,7 +81,7 @@ module FeedList
             # write to log file and stdout
             f.puts "<!DOCTYPE html>"
             f.puts "<html><head><meta charset=\"utf-8\">"
-            f.puts "<title>InfoSec Feeds - #{feed.channel.title}</title>"
+            f.puts "<title>FeedList - #{feed.channel.title}</title>"
             f.puts "<link rel='stylesheet' href='css/isfeeds.css'>"
             f.puts "</head>"
             f.puts "<body>"
