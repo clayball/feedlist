@@ -34,7 +34,7 @@ end
 # This is more for my personal use for now. Not sure if this task will be permanent.
 desc "Generate the feed listing HTML file based on the config file."
 task :genlist do
-	puts "[+] TODO Task: Creating feed listing HTML file."
+	puts "[+] Creating htdocs/feedlist.htm"
 	ruby 'tasks/genlist.rb'
 end
 

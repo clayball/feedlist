@@ -21,6 +21,9 @@
 - :name: slashdot yro
   :type: news
   :url: 'http://rss.slashdot.org/Slashdot/slashdotYourRightsOnline'
+- :name: security_intelligence
+  :type: news
+  :url: 'http://securityintelligence.com/topics/vulnerabilities-threats/feed/'
 
 - :name: cisco
   :type: vendor
