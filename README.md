@@ -1,11 +1,9 @@
-# feedslist #
+# feedlist #
 
-Fetch RSS feeds from various information security websites.
-- save the XML file for processing later.. possibly in various ways/functions
-The original idea was to fetch feeds specifically related to alerts and advisories relate
-vulnerabilities. It might be useful to include other classifications of sources, e.g., fa
-news, and (cough..cough) vendors. 
+The original idea was to fetch RSS feeds specifically related to security
+alerts and advisories and build some intelligence around the data.
 
+TODO: add more details
 
 ## Running ##
 
@@ -16,6 +14,8 @@ Edit config/feed_sources.yml
 TODO: add details
 
 ### Generate your feedlist.htm file ###
+
+Run this to apply changes made to config/feed_sources.yml.
 
   rake genlist
 
