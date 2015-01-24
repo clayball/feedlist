@@ -85,7 +85,7 @@ module FeedList
             f.puts "<link rel='stylesheet' href='css/isfeeds.css'>"
             f.puts "</head>"
             f.puts "<body>"
-            f.puts "<h2>InfoSec Feeds - #{feed.channel.title}</h2>"
+            f.puts "<h2>FeedList - #{feed.channel.title}</h2>"
             puts "[+] Fetching feed: #{feed.channel.title}"
             feed.items.each do |item|
               f.puts "<b>Title:</b> #{item.title}<br>"
