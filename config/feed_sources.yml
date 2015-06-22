@@ -2,6 +2,12 @@
 - :name: cert
   :type: alert
   :url: 'https://www.us-cert.gov/ncas/alerts.xml'
+- :name: packet storm
+  :type: alert
+  :url: 'http://rss.packetstormsecurity.com/files/tags/explot'
+- :name: dark reading
+  :type: alert
+  :url: 'http://www.darkreading.com/rss_simple.asp'
 - :name: nvd
   :type: alert
   :url: 'https://nvd.nist.gov/download/nvd-rss.xml'
