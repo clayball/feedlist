@@ -24,7 +24,7 @@ feed_sources =
     puts "Could not parse YAML: #{e.message}"
   end
 
-File.open("htdocs/feedlist.htm", "w") do |f|
+File.open("htdocs/index.html", "w") do |f|
   f.puts "<!DOCTYPE html>"
   f.puts "<html>"
   f.puts "<head><title>FeedList</title></head>"
@@ -38,4 +38,4 @@ File.open("htdocs/feedlist.htm", "w") do |f|
  f.puts "</body></html>"
 end # File.open loop
 
-puts "[+] feedlist.htm has been created."
+puts "[+] index.html has been created and includes any recent additions to the feedlist."

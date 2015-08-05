@@ -20,7 +20,7 @@ require_relative '../lib/feedlist/feed'
 
 feed_sources = 
  	begin
-    	YAML.load(File.open('config/feed_sources.yml'))
+    YAML.load(File.open('config/feed_sources.yml'))
 	rescue ArgumentError => e
 		puts "Could not parse YAML: #{e.message}"
 	end
