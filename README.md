@@ -37,7 +37,7 @@ for your feedlist.htm file and feed.htm files.
 
 ## Versioning Details ##
 
-We'll be using semantic versioning:
+We'll be using semantic versioning: (is this really necessary?)
 
   PATCH 0.0.x level changes for implementation level detail changes, such as
     small bug fixes.
