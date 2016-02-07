@@ -1,4 +1,6 @@
 *.log
 *.xml
 *.mwb.bak
+*.html
 *.htm
+*.yml
