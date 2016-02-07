@@ -12,7 +12,8 @@ TODO: add more details
 
 Edit config/feed_sources.yml
 
-TODO: add details
+We've include a number of security related RSS feeds. Add/remove to your liking.
+
 
 ### Generate your feedlist.htm file ###
 
@@ -20,34 +21,42 @@ Run this to apply changes made to config/feed_sources.yml.
 
   rake genlist
 
+
 ### Run ###
+
+Fetch the feeds by running..
 
   ruby bin/feedlist
 
+Cron jobs can be setup a number of different ways. You will likely have your own
+preferred way of doing this. This is what I've done.
+
+I created the following shell script that will run via cron.
+
+  #!/bin/bash
+  #
+  # cd to the feedlist directory and run feedlist
+  cd $HOME/local/feedlist
+  bin/feedlist
+
+Create the cronjob.
+
+  crontab -e
+
+  # run feedlist every hour at 10 after
+  10 * * * * /home/$USER/bin/cron-feedlist.sh
+
+After this is in place, open htdocs/index.html.
+
+
 ### View ###
 
-Open htdocs/feedlist.htm in your browser of choice.
+Open htdocs/index.html in your browser of choice.
 
 
 ## Customizing ##
 
 Aside from adding the RSS feeds of your choice you can also customize the CSS
-for your feedlist.htm file and feed.htm files.
+for your index.html file and .htm files.
 
-
-## Versioning Details ##
-
-We'll be using semantic versioning: (is this really necessary?)
-
-  PATCH 0.0.x level changes for implementation level detail changes, such as
-    small bug fixes.
-  
-  MINOR 0.x.0 level changes for any backwards compatible API changes, such as
-    new functionality/features.
-  
-  MAJOR x.0.0 level changes for backwards incompatible API changes, such as
-    changes that will break existing users code if they update.
-
-Based on the above version 1.x.x may never exist. So the major number will
-increase after substantial changes have been made, e.g. 0.99.x to 1.0.x.
 
