@@ -2,18 +2,18 @@
 - :name: cert
   :type: alert
   :url: 'https://www.us-cert.gov/ncas/alerts.xml'
-- :name: packet storm
-  :type: alert
-  :url: 'http://rss.packetstormsecurity.com/files/tags/explot'
 - :name: dark reading
   :type: alert
   :url: 'http://www.darkreading.com/rss_simple.asp'
 - :name: nvd
   :type: alert
   :url: 'https://nvd.nist.gov/download/nvd-rss.xml'
-- :name: ibm
+- :name: drupal core
   :type: alert
-  :url: 'http://www.iss.net/rss.php'
+  :url: 'https://www.drupal.org/security/rss.xml/core/rss.xml'
+- :name: drupal contrib
+  :type: alert
+  :url: 'https://www.drupal.org/security/contrib/rss.xml'
 
 - :name: sans
   :type: news
@@ -27,9 +27,9 @@
 - :name: slashdot yro
   :type: news
   :url: 'http://rss.slashdot.org/Slashdot/slashdotYourRightsOnline'
-- :name: security_intelligence
+- :name: net-security
   :type: news
-  :url: 'http://securityintelligence.com/topics/vulnerabilities-threats/feed/'
+  :url: 'https://feeds2.feedburner.com/HelpNetSecurity'
 
 - :name: cisco
   :type: vendor
@@ -37,9 +37,6 @@
 - :name: aws
   :type: vendor
   :url: 'https://alas.aws.amazon.com/alas.rss'
-- :name: ibm 
-  :type: vendor
-  :url: 'http://www.iss.net/rss.php'
 - :name: suse
   :type: vendor
   :url: 'http://www.novell.com/newsfeeds/rss/patches/security_notifications-daily.xml'
@@ -47,4 +44,3 @@
 - :name: krebs
   :type: blog
   :url: 'http://krebsonsecurity.com/feed/'
-
