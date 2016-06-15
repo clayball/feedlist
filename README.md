@@ -1,9 +1,7 @@
 # feedlist #
 
-The original idea was to fetch RSS feeds specifically related to security
-alerts and advisories and build some intelligence around the data.
-
-TODO: add more details
+The original idea was to fetch RSS feeds specifically related to information
+security alerts and advisories.
 
 
 ## Running ##
