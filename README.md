@@ -1,8 +1,10 @@
 # feedlist #
 
+FeedList is an RSS feed aggregation script developed using the Ruby programming language.
+
 The original idea was to fetch RSS feeds specifically related to information
 security alerts and advisories.
-
+ 
 
 ## Running ##
 
