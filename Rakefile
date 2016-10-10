@@ -21,12 +21,12 @@ task :default do
 	puts "[+] To view all tasks do, rake -T"
 end
 
-desc "Create our database"
+desc "Create the database"
 task :createdb do
 	puts "[+] TODO Task: Creating database"
 end
 
-desc "Backup our database"
+desc "Backup the database"
 task :backupdb do
 	puts "[+] TODO Task: Backup database"
 end
