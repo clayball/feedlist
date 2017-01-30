@@ -6,7 +6,7 @@ The original idea was to fetch RSS feeds specifically related to information
 security alerts and advisories.
  
 
-## Running ##
+## Using feedlist ##
 
 ### Configure RSS Feeds ###
 
